@@ -1,0 +1,49 @@
+{
+  "crop_loss_claim": {
+    "title": "Crop Loss Compensation Claim",
+    "required_fields": ["crop", "area_acres", "loss_percent", "survey_number"],
+    "required_documents": [
+      {"type": "land_record", "label": "Land record (RTC / 7-12 extract)"},
+      {"type": "bank_passbook", "label": "Bank passbook first page"},
+      {"type": "aadhaar", "label": "Aadhaar card"},
+      {"type": "crop_loss_photo", "label": "Geo-tagged photo of the damaged crop"}
+    ],
+    "claim_window_days": 7,
+    "rules": [
+      "Claim must be filed within 7 days of the loss event.",
+      "Name on land record, bank passbook and Aadhaar must match the applicant.",
+      "Loss below 33% is not eligible for compensation."
+    ]
+  },
+  "scholarship_post_matric": {
+    "title": "Post-Matric Scholarship",
+    "required_fields": ["course", "annual_income", "institution"],
+    "required_documents": [
+      {"type": "aadhaar", "label": "Aadhaar card"},
+      {"type": "income_certificate", "label": "Income certificate (valid for 12 months from issue)"},
+      {"type": "marksheet", "label": "Last qualifying marksheet"},
+      {"type": "bank_passbook", "label": "Bank passbook first page"},
+      {"type": "admission_letter", "label": "Admission letter / bonafide certificate"}
+    ],
+    "deadline": "2026-10-31",
+    "rules": [
+      "Application must be submitted on or before 31 Oct 2026.",
+      "Income certificate must not be expired on the date of submission.",
+      "Annual family income must not exceed 250000 INR."
+    ]
+  },
+  "ration_card_update": {
+    "title": "Ration Card Update",
+    "required_fields": ["update_type", "household_size"],
+    "required_documents": [
+      {"type": "aadhaar", "label": "Aadhaar card of the head of household"},
+      {"type": "address_proof", "label": "Address proof"},
+      {"type": "existing_ration_card", "label": "Existing ration card"}
+    ],
+    "claim_window_days": null,
+    "rules": [
+      "Name on address proof must match the head of household on Aadhaar.",
+      "Existing ration card copy is mandatory for any update."
+    ]
+  }
+}

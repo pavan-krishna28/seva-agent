@@ -1,0 +1,89 @@
+[
+  {
+    "id": "C-1001",
+    "scheme_id": "crop_loss_claim",
+    "applicant": {"name": "Ramesh Gowda", "language": "kn", "village": "Hosahalli"},
+    "applicant_note": "ನನ್ನ ಬೆಳೆ ಮಳೆಯಿಂದ ಹಾನಿಯಾಗಿದೆ.",
+    "incident_date": "2026-10-12",
+    "submitted_on": "2026-10-18",
+    "fields": {"crop": "Ragi", "area_acres": 2.5, "loss_percent": 60, "survey_number": "118/2"},
+    "documents": [
+      {"type": "land_record", "present": true, "name_on_doc": "Ramesh Gowda", "expires_on": null},
+      {"type": "bank_passbook", "present": true, "name_on_doc": "Ramesh G", "expires_on": null},
+      {"type": "aadhaar", "present": true, "name_on_doc": "Ramesh Gowda", "expires_on": null}
+    ]
+  },
+  {
+    "id": "C-1002",
+    "scheme_id": "crop_loss_claim",
+    "applicant": {"name": "Sita Devi", "language": "hi", "village": "Rampur"},
+    "applicant_note": "मेरी फसल बाढ़ में बर्बाद हो गई।",
+    "incident_date": "2026-10-01",
+    "submitted_on": "2026-10-14",
+    "fields": {"crop": "Wheat", "area_acres": 1.0, "loss_percent": 80, "survey_number": "42/7"},
+    "documents": [
+      {"type": "land_record", "present": true, "name_on_doc": "Sita Devi", "expires_on": null},
+      {"type": "bank_passbook", "present": true, "name_on_doc": "Sita Devi", "expires_on": null},
+      {"type": "aadhaar", "present": true, "name_on_doc": "Sita Devi", "expires_on": null},
+      {"type": "crop_loss_photo", "present": true, "name_on_doc": null, "expires_on": null}
+    ]
+  },
+  {
+    "id": "C-1003",
+    "scheme_id": "scholarship_post_matric",
+    "applicant": {"name": "Arjun Rao", "language": "en", "village": "Mysuru"},
+    "applicant_note": "Applying for the first-year B.Sc. scholarship.",
+    "incident_date": null,
+    "submitted_on": "2026-10-20",
+    "fields": {"course": "B.Sc. Physics", "annual_income": 180000, "institution": "Govt. First Grade College"},
+    "documents": [
+      {"type": "aadhaar", "present": true, "name_on_doc": "Arjun Rao", "expires_on": null},
+      {"type": "income_certificate", "present": true, "name_on_doc": "Arjun Rao", "expires_on": "2026-06-30"},
+      {"type": "bank_passbook", "present": true, "name_on_doc": "Arjun Rao", "expires_on": null},
+      {"type": "admission_letter", "present": true, "name_on_doc": "Arjun Rao", "expires_on": null}
+    ]
+  },
+  {
+    "id": "C-1004",
+    "scheme_id": "scholarship_post_matric",
+    "applicant": {"name": "Kavya Shetty", "language": "kn", "village": "Udupi"},
+    "applicant_note": "ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ.",
+    "incident_date": null,
+    "submitted_on": "2026-10-22",
+    "fields": {"course": "B.Com", "annual_income": 120000, "institution": "Govt. First Grade College"},
+    "documents": [
+      {"type": "aadhaar", "present": true, "name_on_doc": "Kavya Shetty", "expires_on": null},
+      {"type": "income_certificate", "present": true, "name_on_doc": "Kavya Shetty", "expires_on": "2027-03-31"},
+      {"type": "marksheet", "present": true, "name_on_doc": "Kavya Shetty", "expires_on": null},
+      {"type": "bank_passbook", "present": true, "name_on_doc": "Kavya Shetty", "expires_on": null},
+      {"type": "admission_letter", "present": true, "name_on_doc": "Kavya Shetty", "expires_on": null}
+    ]
+  },
+  {
+    "id": "C-1005",
+    "scheme_id": "ration_card_update",
+    "applicant": {"name": "Sunita Devi", "language": "hi", "village": "Barabanki"},
+    "applicant_note": "परिवार में एक नया सदस्य जोड़ना है।",
+    "incident_date": null,
+    "submitted_on": "2026-10-19",
+    "fields": {"update_type": "add_member", "household_size": 5},
+    "documents": [
+      {"type": "aadhaar", "present": true, "name_on_doc": "Sunita Devi", "expires_on": null},
+      {"type": "address_proof", "present": true, "name_on_doc": "Sunita Kumari", "expires_on": null},
+      {"type": "existing_ration_card", "present": true, "name_on_doc": "Sunita Devi", "expires_on": null}
+    ]
+  },
+  {
+    "id": "C-1006",
+    "scheme_id": "ration_card_update",
+    "applicant": {"name": "Mohammed Irfan", "language": "en", "village": "Bengaluru"},
+    "applicant_note": "Change of address after moving house.",
+    "incident_date": null,
+    "submitted_on": "2026-10-21",
+    "fields": {"update_type": "address_change"},
+    "documents": [
+      {"type": "aadhaar", "present": true, "name_on_doc": "Mohammed Irfan", "expires_on": null},
+      {"type": "address_proof", "present": true, "name_on_doc": "Mohammed Irfan", "expires_on": null}
+    ]
+  }
+]

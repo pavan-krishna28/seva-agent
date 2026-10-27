@@ -1,4 +1,4 @@
-# Render blueprint: New > Blueprint > pick this repo. Then fill the secrets marked sync:false in the dashboard.
+# Render blueprint: New > Blueprint > pick this repo, then fill in the settings marked sync:false in the dashboard.
 services:
   - type: web
     name: seva-agent

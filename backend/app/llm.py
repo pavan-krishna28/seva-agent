@@ -18,7 +18,7 @@ class AnthropicLLM:
 
         self.model = model or os.getenv("ANTHROPIC_MODEL", "claude-haiku-5-5")
         self.max_tokens = max_tokens
-        # Reads ANTHROPIC_API_KEY. Keys that are not tied to one workspace also need ANTHROPIC_WORKSPACE_ID.
+        # Credentials come from the environment (see .env.example).
         ws = os.getenv("ANTHROPIC_WORKSPACE_ID")
         self.client = AsyncAnthropic(default_headers={"anthropic-workspace-id": ws} if ws else None)
 

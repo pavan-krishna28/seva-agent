@@ -2,7 +2,7 @@
 
 A case desk for government officers, in Kannada, Hindi and English. An AI agent reads each application, checks it against the scheme rules, and tells the officer what needs attention first and what to do. **The officer always makes the final call.**
 
-> **Live demo:** https://seva-agent.onrender.com (free hosting: the first visit after a quiet spell can take up to a minute to wake up) · **Login:** username `officer`; the password is in the submission email (the demo account holds only made-up data)
+> **Live demo:** https://seva-agent.onrender.com (free hosting: the first visit after a quiet spell can take up to a minute to wake up) · **Login:** the credentials are in the submission email (the demo account holds only made-up data)
 
 ## The problem
 
@@ -38,7 +38,7 @@ React + TypeScript UI ──HTTP──▶ FastAPI ──▶ Agent loop ──▶
 - **A plain tool-calling loop** (`backend/app/agent.py`) with a hard step cap. Claude gathers evidence with the tools and must finish by calling a local `submit_triage` tool with a structured, validated result. A bad submission is bounced back to the model; tool errors are returned to the model so it can recover. Every risk must cite evidence from a tool result.
 - **Rules first, AI second.** The ranking and the document checks (name matching, expiry, filing window) are deterministic code, so they are testable and explainable. Claude is used where language and judgment help: summarising, weighing what the findings mean, and writing a polite message in the applicant's language.
 - **Local language end to end.** Interface labels, case fields, document names, scheme names and the priority reasons are translated; the AI writes its summary in the officer's chosen language and the applicant message in the applicant's. Analyses are stored per language.
-- **Safe to leave online.** Login required (signed tokens, no session store), a daily cap on live AI calls (`MAX_LIVE_ANALYSES_PER_DAY`), and saved analyses (`backend/seed/triage_seed.json`) that load on first start so a reviewer sees real results without spending any API calls.
+- **Safe to leave online.** Login required (signed tokens, no session store), a daily cap on live AI checks, and saved analyses (`backend/seed/triage_seed.json`) that load on first start so a reviewer sees real results at once.
 - **A small, fast model by default.** The agent runs on Claude Haiku (`ANTHROPIC_MODEL=claude-haiku-5-5`), which keeps each check quick and cheap for a live demo; set `ANTHROPIC_MODEL` to a larger model for harder cases.
 - **The model sits behind one method** (`backend/app/llm.py`), so tests run the real agent loop and the real MCP server with a scripted model and no network.
 - **One container.** FastAPI serves the built UI too (`Dockerfile`), so the live demo is a single service.
@@ -56,15 +56,15 @@ React + TypeScript UI ──HTTP──▶ FastAPI ──▶ Agent loop ──▶
 
 ## Run it locally
 
-You need Python 3.11+, Node 18+, and an Anthropic API key.
+You need Python 3.11+ and Node 18+.
 
 ```powershell
 # backend
 cd backend
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scriptsctivate
 pip install -r requirements.txt
-copy .env.example .env        # put your ANTHROPIC_API_KEY in .env
+copy .env.example .env        # then fill in the settings listed in the file
 uvicorn app.main:app --reload --port 8000
 
 # frontend (new terminal)
@@ -73,15 +73,13 @@ npm install
 npm run dev                   # http://localhost:5173
 ```
 
-macOS/Linux: use `source .venv/bin/activate` and `cp`. Locally, sign in with `officer` / `seva-demo-2026` (change with `OFFICER_USER` / `OFFICER_PASSWORD`; set `AUTH_DISABLED=1` to skip login while developing).
+macOS/Linux: use `source .venv/bin/activate` and `cp`. For quick local work, set `AUTH_DISABLED=1` to skip the login screen.
 
-If the API replies that the key "is not scoped to a workspace", also set `ANTHROPIC_WORKSPACE_ID` in `.env`.
-
-To regenerate the saved analyses (needs the key): `cd backend && python scripts/generate_seed.py`.
+To regenerate the saved analyses: `cd backend && python scripts/generate_seed.py`.
 
 ## Deploy
 
-`Dockerfile` builds everything into one image. On Render, "New > Blueprint" with this repo uses `render.yaml`; add `ANTHROPIC_API_KEY`, `ANTHROPIC_WORKSPACE_ID` (if your key needs it) and `OFFICER_PASSWORD` as secrets. Any host that runs a Docker image works the same way. The SQLite file lives in the container, so decisions reset on redeploy, which is fine for a demo.
+`Dockerfile` builds everything into one image. On Render, "New > Blueprint" with this repo uses `render.yaml`; fill in the settings it marks as `sync: false`. Any host that runs a Docker image works the same way. The SQLite file lives in the container, so decisions reset on redeploy, which is fine for a demo.
 
 ## Tests
 
@@ -90,7 +88,7 @@ cd backend
 pytest
 ```
 
-16 tests. They run the real agent loop against the real MCP server over stdio with a **scripted model** standing in for Claude, so they verify the plumbing without an API key: tool discovery, parallel tool calls, error recovery, schema validation, the step cap, the human-decision API, login, the priority ranking and its reasons, per-language analyses, the daily cap and the saved-analysis seed. They do not measure how well Claude reasons about a case; that needs a live run, which `scripts/generate_seed.py` performs on all six cases.
+17 tests. They run the real agent loop against the real MCP server over stdio with a **scripted model** standing in for Claude, so they verify the plumbing without calling any outside service: tool discovery, parallel tool calls, error recovery, schema validation, the step cap, the human-decision API, login, the priority ranking and its reasons, per-language analyses, the daily cap and the saved-analysis seed. They do not measure how well Claude reasons about a case; that needs a live run, which `scripts/generate_seed.py` performs on all six cases.
 
 ## Known limits
 

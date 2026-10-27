@@ -1,7 +1,7 @@
 """Officer login: one demo account from env vars, stateless signed tokens (no session table, nothing to leak).
 
-Set OFFICER_USER / OFFICER_PASSWORD on the server. AUTH_SECRET signs tokens; if unset it is derived from the
-password, so changing the password also logs everyone out."""
+The account comes from the server's environment settings. If no password is configured, nobody can sign in.
+Tokens are signed with a value derived from that configuration, so changing it signs everyone out."""
 from __future__ import annotations
 
 import base64
@@ -11,11 +11,10 @@ import os
 import time
 
 DEFAULT_USER = "officer"
-DEFAULT_PASSWORD = "seva-demo-2026"  # documented demo credentials; override in the environment for any real use
 
 
 def _creds() -> tuple[str, str]:
-    return os.getenv("OFFICER_USER", DEFAULT_USER), os.getenv("OFFICER_PASSWORD", DEFAULT_PASSWORD)
+    return os.getenv("OFFICER_USER", DEFAULT_USER), os.getenv("OFFICER_PASSWORD", "")
 
 
 def _secret() -> bytes:
@@ -24,6 +23,8 @@ def _secret() -> bytes:
 
 def check_login(user: str, password: str) -> bool:
     u, p = _creds()
+    if not p:  # nothing configured: refuse everyone
+        return False
     return hmac.compare_digest(user.encode(), u.encode()) & hmac.compare_digest(password.encode(), p.encode())
 
 

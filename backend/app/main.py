@@ -127,7 +127,7 @@ def create_app(llm: LLM | None = None, db_path: str | None = None, toolbox: McpT
     @app.post("/api/cases/{case_id}/analyze")
     async def analyze(case_id: str, lang: Lang = "en", _: str = Depends(officer)):
         if app.state.llm is None:
-            raise HTTPException(503, "ANTHROPIC_API_KEY is not configured. Copy backend/.env.example to backend/.env and add your key.")
+            raise HTTPException(503, "The AI service is not configured on this server.")
         cap = int(os.getenv("MAX_LIVE_ANALYSES_PER_DAY", "40"))
         if app.state.store.used_today() >= cap:
             raise HTTPException(429, "Today's limit of live AI checks has been reached for this demo. The saved analyses still work.")

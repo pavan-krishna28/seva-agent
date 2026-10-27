@@ -176,20 +176,21 @@ def test_api_without_key_returns_503(tmp_path, monkeypatch):
     with TestClient(app) as c:
         assert c.get("/api/health").json()["llm_configured"] is False
         r = c.post("/api/cases/C-1001/analyze")
-        assert r.status_code == 503 and "ANTHROPIC_API_KEY" in r.json()["detail"]
+        assert r.status_code == 503 and "not configured" in r.json()["detail"]
         assert c.post("/api/cases/NOPE/analyze").status_code in (404, 503)
 
 
 # ---------- login, overview priority, language, daily cap, seed ----------
 
-def test_login_is_required_and_works(tmp_path):
+def test_login_is_required_and_works(tmp_path, monkeypatch):
+    monkeypatch.setenv("OFFICER_PASSWORD", "test-only-password")
     app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=True, seed_path=tmp_path / "none.json")
     with TestClient(app) as c:
         assert c.get("/api/health").status_code == 200          # health stays public
         assert c.get("/api/cases").status_code == 401
         assert c.get("/api/overview").status_code == 401
         assert c.post("/api/login", json={"username": "officer", "password": "nope"}).status_code == 401
-        tok = c.post("/api/login", json={"username": "officer", "password": "seva-demo-2026"}).json()["token"]
+        tok = c.post("/api/login", json={"username": "officer", "password": "test-only-password"}).json()["token"]
         h = {"Authorization": f"Bearer {tok}"}
         assert c.get("/api/cases", headers=h).status_code == 200
         assert c.get("/api/cases", headers={"Authorization": "Bearer garbage"}).status_code == 401
@@ -241,3 +242,11 @@ def test_seed_loads_saved_analyses_on_a_fresh_database(tmp_path):
     with TestClient(app) as c:
         t = c.get("/api/cases/C-1004/triage").json()
         assert t["triage"]["recommended_action"] == "approve" and t["status"] == "awaiting_review"
+
+
+def test_login_is_refused_when_no_password_is_configured(tmp_path, monkeypatch):
+    monkeypatch.delenv("OFFICER_PASSWORD", raising=False)
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=True, seed_path=tmp_path / "none.json")
+    with TestClient(app) as c:
+        assert c.post("/api/login", json={"username": "officer", "password": ""}).status_code == 401
+        assert c.post("/api/login", json={"username": "officer", "password": "anything"}).status_code == 401

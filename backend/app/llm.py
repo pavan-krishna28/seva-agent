@@ -13,10 +13,10 @@ class LLM(Protocol):
 
 
 class AnthropicLLM:
-    def __init__(self, model: str | None = None, max_tokens: int = 2048):
+    def __init__(self, model: str | None = None, max_tokens: int = 8192):
         from anthropic import AsyncAnthropic
 
-        self.model = model or os.getenv("ANTHROPIC_MODEL", "claude-sonnet-5-5")
+        self.model = model or os.getenv("ANTHROPIC_MODEL", "claude-haiku-5-5")
         self.max_tokens = max_tokens
         # Reads ANTHROPIC_API_KEY. Keys that are not tied to one workspace also need ANTHROPIC_WORKSPACE_ID.
         ws = os.getenv("ANTHROPIC_WORKSPACE_ID")

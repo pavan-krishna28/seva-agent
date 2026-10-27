@@ -2,7 +2,7 @@
 
 A case desk for government officers, in Kannada, Hindi and English. An AI agent reads each application, checks it against the scheme rules, and tells the officer what needs attention first and what to do. **The officer always makes the final call.**
 
-> **Live demo:** _add the link here after deploying_ · **Login:** `officer` / `seva-demo-2026` (a demo account; all data in this repo is made up)
+> **Live demo:** https://seva-agent.onrender.com (free hosting: the first visit after a quiet spell can take up to a minute to wake up) · **Login:** username `officer`; the password is in the submission email (the demo account holds only made-up data)
 
 ## The problem
 
@@ -39,6 +39,7 @@ React + TypeScript UI ──HTTP──▶ FastAPI ──▶ Agent loop ──▶
 - **Rules first, AI second.** The ranking and the document checks (name matching, expiry, filing window) are deterministic code, so they are testable and explainable. Claude is used where language and judgment help: summarising, weighing what the findings mean, and writing a polite message in the applicant's language.
 - **Local language end to end.** Interface labels, case fields, document names, scheme names and the priority reasons are translated; the AI writes its summary in the officer's chosen language and the applicant message in the applicant's. Analyses are stored per language.
 - **Safe to leave online.** Login required (signed tokens, no session store), a daily cap on live AI calls (`MAX_LIVE_ANALYSES_PER_DAY`), and saved analyses (`backend/seed/triage_seed.json`) that load on first start so a reviewer sees real results without spending any API calls.
+- **A small, fast model by default.** The agent runs on Claude Haiku (`ANTHROPIC_MODEL=claude-haiku-5-5`), which keeps each check quick and cheap for a live demo; set `ANTHROPIC_MODEL` to a larger model for harder cases.
 - **The model sits behind one method** (`backend/app/llm.py`), so tests run the real agent loop and the real MCP server with a scripted model and no network.
 - **One container.** FastAPI serves the built UI too (`Dockerfile`), so the live demo is a single service.
 
@@ -72,7 +73,7 @@ npm install
 npm run dev                   # http://localhost:5173
 ```
 
-macOS/Linux: use `source .venv/bin/activate` and `cp`. Sign in with `officer` / `seva-demo-2026` (change with `OFFICER_USER` / `OFFICER_PASSWORD`; set `AUTH_DISABLED=1` to skip login while developing).
+macOS/Linux: use `source .venv/bin/activate` and `cp`. Locally, sign in with `officer` / `seva-demo-2026` (change with `OFFICER_USER` / `OFFICER_PASSWORD`; set `AUTH_DISABLED=1` to skip login while developing).
 
 If the API replies that the key "is not scoped to a workspace", also set `ANTHROPIC_WORKSPACE_ID` in `.env`.
 

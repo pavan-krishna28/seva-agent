@@ -85,7 +85,7 @@ def _preview(obj: Any, limit: int = 600) -> str:
     return s if len(s) <= limit else s[:limit] + "…"
 
 
-async def run_triage(case_id: str, llm: LLM, toolbox: McpToolbox, max_steps: int = 10, lang: str = "en") -> dict:
+async def run_triage(case_id: str, llm: LLM, toolbox: McpToolbox, max_steps: int = 14, lang: str = "en") -> dict:
     system = SYSTEM_PROMPT.replace("{officer_language}", LANG_NAMES.get(lang, "English"))
     tools = toolbox.tools + [SUBMIT_TRIAGE_TOOL]
     mcp_names = {t["name"] for t in toolbox.tools}

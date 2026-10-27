@@ -37,7 +37,15 @@ async def main(only_lang: str | None = None):
                 if (c["id"], lang) in done:
                     continue
                 print("analysing", c["id"], lang, flush=True)
-                r = await run_triage(c["id"], llm, tb, lang=lang)
+                r = None
+                for attempt in (1, 2):
+                    try:
+                        r = await run_triage(c["id"], llm, tb, lang=lang)
+                        break
+                    except Exception as e:  # one retry; skip the case if it fails twice
+                        print("  attempt", attempt, "failed:", e, flush=True)
+                if r is None:
+                    continue
                 rows.append({"case_id": c["id"], "lang": lang, "triage": r["triage"], "trace": r["trace"], "model": r["model"]})
                 OUT.write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
     print("saved", len(rows), "analyses to", OUT)

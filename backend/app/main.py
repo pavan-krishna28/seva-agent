@@ -134,10 +134,14 @@ def create_app(llm: LLM | None = None, db_path: str | None = None, toolbox: McpT
         _, err = await app.state.toolbox.call("get_case", {"case_id": case_id})
         if err:
             raise HTTPException(404, f"Unknown case {case_id}")
-        try:
-            result = await run_triage(case_id, app.state.llm, app.state.toolbox, lang=lang)
-        except AgentError as e:
-            raise HTTPException(502, str(e))
+        result = None
+        for attempt in (1, 2):  # the model occasionally wanders; one automatic retry is cheaper than an error for the officer
+            try:
+                result = await run_triage(case_id, app.state.llm, app.state.toolbox, lang=lang)
+                break
+            except AgentError as e:
+                if attempt == 2:
+                    raise HTTPException(502, str(e))
         app.state.store.count_use()
         app.state.store.save_triage(case_id, result, lang)
         return app.state.store.get_triage(case_id, lang)

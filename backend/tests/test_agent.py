@@ -146,7 +146,7 @@ def test_name_match(a, b, expected):
 # ---------- HTTP API: agent recommends, human decides ----------
 
 def test_api_flow_human_decides(tmp_path):
-    app = create_app(llm=ScriptedLLM(happy_script()), db_path=str(tmp_path / "t.db"), require_login=False)
+    app = create_app(llm=ScriptedLLM(happy_script()), db_path=str(tmp_path / "t.db"), require_login=False, seed_path=tmp_path / "none.json")
     with TestClient(app) as c:
         assert c.get("/api/health").json()["llm_configured"] is True
         cases = c.get("/api/cases").json()
@@ -172,7 +172,7 @@ def test_api_flow_human_decides(tmp_path):
 
 def test_api_without_key_returns_503(tmp_path, monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
-    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=False)
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=False, seed_path=tmp_path / "none.json")
     with TestClient(app) as c:
         assert c.get("/api/health").json()["llm_configured"] is False
         r = c.post("/api/cases/C-1001/analyze")
@@ -183,7 +183,7 @@ def test_api_without_key_returns_503(tmp_path, monkeypatch):
 # ---------- login, overview priority, language, daily cap, seed ----------
 
 def test_login_is_required_and_works(tmp_path):
-    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=True)
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=True, seed_path=tmp_path / "none.json")
     with TestClient(app) as c:
         assert c.get("/api/health").status_code == 200          # health stays public
         assert c.get("/api/cases").status_code == 401
@@ -196,7 +196,7 @@ def test_login_is_required_and_works(tmp_path):
 
 
 def test_overview_ranks_problem_cases_first_and_explains_why(tmp_path):
-    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=False)
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=False, seed_path=tmp_path / "none.json")
     with TestClient(app) as c:
         o = c.get("/api/overview").json()
         ids = [x["id"] for x in o["cases"]]
@@ -210,7 +210,7 @@ def test_overview_ranks_problem_cases_first_and_explains_why(tmp_path):
 
 
 def test_analysis_is_stored_per_language_and_decided_cases_sink(tmp_path):
-    app = create_app(llm=ScriptedLLM(happy_script() + happy_script()), db_path=str(tmp_path / "t.db"), require_login=False)
+    app = create_app(llm=ScriptedLLM(happy_script() + happy_script()), db_path=str(tmp_path / "t.db"), require_login=False, seed_path=tmp_path / "none.json")
     with TestClient(app) as c:
         assert c.post("/api/cases/C-1001/analyze?lang=kn").status_code == 200
         assert c.get("/api/cases/C-1001/triage?lang=kn").json()["lang"] == "kn"
@@ -225,7 +225,7 @@ def test_analysis_is_stored_per_language_and_decided_cases_sink(tmp_path):
 
 def test_daily_cap_blocks_live_analysis(tmp_path, monkeypatch):
     monkeypatch.setenv("MAX_LIVE_ANALYSES_PER_DAY", "1")
-    app = create_app(llm=ScriptedLLM(happy_script() + happy_script()), db_path=str(tmp_path / "t.db"), require_login=False)
+    app = create_app(llm=ScriptedLLM(happy_script() + happy_script()), db_path=str(tmp_path / "t.db"), require_login=False, seed_path=tmp_path / "none.json")
     with TestClient(app) as c:
         assert c.post("/api/cases/C-1001/analyze").status_code == 200
         r = c.post("/api/cases/C-1001/analyze")

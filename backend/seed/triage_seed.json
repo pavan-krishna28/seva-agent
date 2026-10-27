@@ -1,0 +1,2428 @@
+[
+ {
+  "case_id": "C-1001",
+  "lang": "kn",
+  "triage": {
+   "summary": "ಬೆಳೆ ಹಾನಿ ಪರಿಹಾರ ಕೋರಿಕೆ C-1001: ಗೆ ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಬೆಳೆ ಹಾನಿ ಫೋಟೋ ಇಲ್ಲ ಮತ್ತು ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹೆಸರು ಭಾಗಶಃ ಹೊಂದುತ್ತದೆ (\"Ramesh G\"). ಅರ್ಜಿದಾರರು ಇವುಗಳನ್ನು ಸರಿಪಡಿಸಬಹುದು; ಆದ್ದರಿಂದ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೋರಿಕೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ.",
+   "missing_items": [
+    {
+     "item": "ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಫೋಟೋ (crop_loss_photo)",
+     "why": "ಯೋಜನೆಗೆ ಕಡ್ಡಾಯ ದಾಖಲೆ; ಫೋಟೋ ಲಗತ್ತಿಸಲಾಗಿಲ್ಲ ('crop_loss_photo not attached')."
+    },
+    {
+     "item": "ಸ್ಪಷ್ಟ ಪೂರ್ಣ ಹೆಸರಿನ ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್ ಮೊದಲ ಪುಟ, ಅಥವಾ ಬ್ಯಾಂಕ್ ದೃಢೀಕರಣ ಪತ್ರ (ಹೆಸರು 'Ramesh Gowda' ಎಂದು)",
+     "why": "ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹೆಸರು 'Ramesh G' ಎಂದಿದೆ; ಭೂ ದಾಖಲೆ ಮತ್ತು ಆಧಾರ್‌ನಲ್ಲಿ 'Ramesh Gowda' ಇರುವುದರಿಂದ ಹೆಸರು ಹೊಂದಬೇಕು ಎಂಬ ನಿಯಮವಿದೆ."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಜಿಯೋ-ಟ್ಯಾಗ್ ಫೋಟೋ ಇಲ್ಲ",
+     "evidence": "crop_loss_photo: present=false, issues=[{'code': 'missing', 'detail': 'crop_loss_photo not attached'}]"
+    },
+    {
+     "issue": "ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹೆಸರು ಭಾಗಶಃ ಮಾತ್ರ ಹೊಂದುತ್ತದೆ",
+     "evidence": "bank_passbook: name_on_doc='Ramesh G', issue code 'name_partial_match': \"Applicant 'Ramesh Gowda' vs document 'Ramesh G'\""
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "ಕಡ್ಡಾಯ ಫೋಟೋ ಲಗತ್ತಿಸಿಲ್ಲ ಮತ್ತು ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಸಂಪೂರ್ಣ ಹೊಂದುವುದಿಲ್ಲ. ಇವೆರಡೂ ಅರ್ಜಿದಾರರಿಂದ ಸರಿಪಡಿಸಬಹುದಾದ ಸಮಸ್ಯೆಗಳು. ಇತರ ಅಂಶಗಳು ಸರಿಯಾಗಿವೆ: ಸಲ್ಲಿಕೆ 7 ದಿನಗಳ ಒಳಗೆ (ಕಳೆದ 6 ದಿನ, ಮಿತಿ 7 ದಿನ); ಭೂ ದಾಖಲೆ ಮತ್ತು ಆಧಾರ್ ಹೆಸರು ಹೊಂದುತ್ತದೆ; ಹಾನಿ 60% (ಕನಿಷ್ಠ 33% ಅಗತ್ಯ). ಕ್ಷೇತ್ರಗಳು (ಬೆಳೆ, ವಿಸ್ತೀರ್ಣ, ಸರ್ವೆ ಸಂಖ್ಯೆ) ಭರ್ತಿಯಾಗಿವೆ.",
+   "message_to_applicant": "ನಮಸ್ಕಾರ ರಮೇಶ್ ಗೌಡರೇ, ನಿಮ್ಮ ಬೆಳೆ ಹಾನಿ ಪರಿಹಾರ ಅರ್ಜಿಯನ್ನು ಸ್ವೀಕರಿಸಲಾಗಿದೆ. ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಒದಗಿಸಿ: 1) ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ (ಜಿಯೋ-ಟ್ಯಾಗ್ ಇರುವಂತೆ). 2) ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರು 'ರಮೇಶ್ ಗೌಡ' ಇರುವ ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಮೊದಲ ಪುಟ, ಅಥವಾ ಬ್ಯಾಂಕ್‌ನಿಂದ ಹೆಸರು ದೃಢೀಕರಣ ಪತ್ರ. ಇವುಗಳನ್ನು ಸಲ್ಲಿಸಿದ ನಂತರ ನಿಮ್ಮ ಅರ್ಜಿಯನ್ನು ಮುಂದುವರಿಸಲಾಗುವುದು. ಧನ್ಯವಾದಗಳು.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001"
+    },
+    "output": "{\"id\": \"C-1001\", \"scheme_id\": \"crop_loss_claim\", \"applicant\": {\"name\": \"Ramesh Gowda\", \"language\": \"kn\", \"village\": \"Hosahalli\"}, \"applicant_note\": \"ನನ್ನ ಬೆಳೆ ಮಳೆಯಿಂದ ಹಾನಿಯಾಗಿದೆ.\", \"incident_date\": \"2026-10-12\", \"submitted_on\": \"2026-10-18\", \"fields\": {\"crop\": \"Ragi\", \"area_acres\": 2.5, \"loss_percent\": 60, \"survey_number\": \"118/2\"}, \"documents\": [{\"type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"expires_on\": null}, {\"type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Ramesh G\", \"expires_on\": null}, {\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\",…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "crop_loss_claim"
+    },
+    "output": "{\"title\": \"Crop Loss Compensation Claim\", \"required_fields\": [\"crop\", \"area_acres\", \"loss_percent\", \"survey_number\"], \"required_documents\": [{\"type\": \"land_record\", \"label\": \"Land record (RTC / 7-12 extract)\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"crop_loss_photo\", \"label\": \"Geo-tagged photo of the damaged crop\"}], \"claim_window_days\": 7, \"rules\": [\"Claim must be filed within 7 days of the loss event.\", \"Name on land record, bank passbook and Aadhaar must match the applicant.\", \"Loss below 33% is not eligible fo…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001"
+    },
+    "output": "{\"rule\": \"7 days from incident\", \"days_elapsed\": 6, \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "land_record"
+    },
+    "output": "{\"doc_type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Ramesh G\", \"issues\": [{\"code\": \"name_partial_match\", \"detail\": \"Applicant 'Ramesh Gowda' vs document 'Ramesh G'\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "crop_loss_photo"
+    },
+    "output": "{\"doc_type\": \"crop_loss_photo\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"crop_loss_photo not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "ಬೆಳೆ ಹಾನಿ ಪರಿಹಾರ ಕೋರಿಕೆ C-1001: ಗೆ ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಬೆಳೆ ಹಾನಿ ಫೋಟೋ ಇಲ್ಲ ಮತ್ತು ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹೆಸರು ಭಾಗಶಃ ಹೊಂದುತ್ತದೆ (\"Ramesh G\"). ಅರ್ಜಿದಾರರು ಇವುಗಳನ್ನು ಸರಿಪಡಿಸಬಹುದು; ಆದ್ದರಿಂದ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೋರಿಕೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ.",
+     "missing_items": [
+      {
+       "item": "ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಫೋಟೋ (crop_loss_photo)",
+       "why": "ಯೋಜನೆಗೆ ಕಡ್ಡಾಯ ದಾಖಲೆ; ಫೋಟೋ ಲಗತ್ತಿಸಲಾಗಿಲ್ಲ ('crop_loss_photo not attached')."
+      },
+      {
+       "item": "ಸ್ಪಷ್ಟ ಪೂರ್ಣ ಹೆಸರಿನ ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್ ಮೊದಲ ಪುಟ, ಅಥವಾ ಬ್ಯಾಂಕ್ ದೃಢೀಕರಣ ಪತ್ರ (ಹೆಸರು 'Ramesh Gowda' ಎಂದು)",
+       "why": "ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹೆಸರು 'Ramesh G' ಎಂದಿದೆ; ಭೂ ದಾಖಲೆ ಮತ್ತು ಆಧಾರ್‌ನಲ್ಲಿ 'Ramesh Gowda' ಇರುವುದರಿಂದ ಹೆಸರು ಹೊಂದಬೇಕು ಎಂಬ ನಿಯಮವಿದೆ."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಜಿಯೋ-ಟ್ಯಾಗ್ ಫೋಟೋ ಇಲ್ಲ",
+       "evidence": "crop_loss_photo: present=false, issues=[{'code': 'missing', 'detail': 'crop_loss_photo not attached'}]"
+      },
+      {
+       "issue": "ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹೆಸರು ಭಾಗಶಃ ಮಾತ್ರ ಹೊಂದುತ್ತದೆ",
+       "evidence": "bank_passbook: name_on_doc='Ramesh G', issue code 'name_partial_match': \"Applicant 'Ramesh Gowda' vs document 'Ramesh G'\""
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "ಕಡ್ಡಾಯ ಫೋಟೋ ಲಗತ್ತಿಸಿಲ್ಲ ಮತ್ತು ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಸಂಪೂರ್ಣ ಹೊಂದುವುದಿಲ್ಲ. ಇವೆರಡೂ ಅರ್ಜಿದಾರರಿಂದ ಸರಿಪಡಿಸಬಹುದಾದ ಸಮಸ್ಯೆಗಳು. ಇತರ ಅಂಶಗಳು ಸರಿಯಾಗಿವೆ: ಸಲ್ಲಿಕೆ 7 ದಿನಗಳ ಒಳಗೆ (ಕಳೆದ 6 ದಿನ, ಮಿತಿ 7 ದಿನ); ಭೂ ದಾಖಲೆ ಮತ್ತು ಆಧಾರ್ ಹೆಸರು ಹೊಂದುತ್ತದೆ; ಹಾನಿ 60% (ಕನಿಷ್ಠ 33% ಅಗತ್ಯ). ಕ್ಷೇತ್ರಗಳು (ಬೆಳೆ, ವಿಸ್ತೀರ್ಣ, ಸರ್ವೆ ಸಂಖ್ಯೆ) ಭರ್ತಿಯಾಗಿವೆ.",
+     "message_to_applicant": "ನಮಸ್ಕಾರ ರಮೇಶ್ ಗೌಡರೇ, ನಿಮ್ಮ ಬೆಳೆ ಹಾನಿ ಪರಿಹಾರ ಅರ್ಜಿಯನ್ನು ಸ್ವೀಕರಿಸಲಾಗಿದೆ. ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಒದಗಿಸಿ: 1) ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ (ಜಿಯೋ-ಟ್ಯಾಗ್ ಇರುವಂತೆ). 2) ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರು 'ರಮೇಶ್ ಗೌಡ' ಇರುವ ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಮೊದಲ ಪುಟ, ಅಥವಾ ಬ್ಯಾಂಕ್‌ನಿಂದ ಹೆಸರು ದೃಢೀಕರಣ ಪತ್ರ. ಇವುಗಳನ್ನು ಸಲ್ಲಿಸಿದ ನಂತರ ನಿಮ್ಮ ಅರ್ಜಿಯನ್ನು ಮುಂದುವರಿಸಲಾಗುವುದು. ಧನ್ಯವಾದಗಳು.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1002",
+  "lang": "kn",
+  "triage": {
+   "summary": "C-1002 (फसल नुकसान दावा): दावा घटना के 7 दिन की सीमा के बाद सल्ल��ा गया है (13 दिन)। सभी दस्तावेज़ सही हैं। सिफारिश: अस्वीकार करें, या विनाय��ि प्रक्रिया हो तो अधिकारी द्वारा जाँच के लिए एस्केलेट करें।",
+   "missing_items": [],
+   "risks": [
+    {
+     "issue": "ක्लेम ಅವಧಿ ಮೀರಿ ಸಲ್ಲಿಸಲಾಗಿದೆ (ಯೋಜನೆಯ 7 ದಿನಗಳ ಮಿತಿ ಉಲ್ಲಂಘನೆ)",
+     "evidence": "days_elapsed: 13, within_limit: false; rule: 7 days from incident; incident_date 2026-10-01, submitted_on 2026-10-14"
+    },
+    {
+     "issue": "ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಫೋಟೋ ಇದೆ ಆದರೆ ಜಿಯೋ-ಟ್ಯಾಗ್ ದೃಢೀಕರಣ ಉಪಕರಣದಿಂದ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ",
+     "evidence": "crop_loss_photo: present: true, name_on_doc: null, issues: []"
+    }
+   ],
+   "reason": "ದಾಖಲೆಗಳು ಮತ್ತು ಕ್ಷೇತ್ರ ಮಾಹಿತಿ ಯೋಜನೆಯ ಅವಶ್ಯಕತೆಗಳನ್ನು ಪೂರೈಸುತ್ತವೆ: ಭೂಮಿ ದಾಖಲೆ, ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್ ಮತ್ತು ಆಧಾರ್ ಮೇಲೆ ಹೆಸರು \"Sita Devi\" ಎಂದು ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ; ನಷ್ಟ 80% (ಕನಿಷ್ಠ 33% ಅಗತ್ಯ). ಆದರೆ ಸಲ್ಲಿಕೆ ಅವಧಿ 7 ದಿನಗಳನ್ನು ಮೀರಿದೆ (13 ದಿನ). ಇದನ್ನು ಅರ್ಜಿದಾರರು ಸರಿಪಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ಆದ್ದರಿಂದ request_more_info ಸೂಕ್ತವಲ್ಲ. ಯೋಜನೆಯ ನಿಯಮಗಳಲ್ಲಿ ವಿನಾಯಿತಿ ಪ್ರಕ್ರಿಯೆ ಉಲ್ಲೇಖಿಸಲ್ಪಟ್ಟಿಲ್ಲ, ಆದ್ದರಿಂದ ಅಧಿಕಾರಿ ವಿವೇಚನೆಯಿಂದ ನಿರ್ಧರಿಸಬೇಕು.",
+   "recommended_action": "reject",
+   "message_to_applicant": "नमस्ते सीता देवी जी, आपका फसल नुकसान का दावा तय 7 दिनों की समय-सीमा के बाद मिला है (नुकसान की तारीख 1 अक्टूबर 2026, दावा 14 अक्टूबर 2026)। इसलिए इस दावे को आगे बढ़ाने में दिक्कत है। आपके भूमि रिकॉर्ड, बैंक पासबुक, आधार कार्ड और फोटो सही पाए गए हैं। कृपया इस बारे में अपने कार्यालय के अधिकारी से बात करें।",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002"
+    },
+    "output": "{\"id\": \"C-1002\", \"scheme_id\": \"crop_loss_claim\", \"applicant\": {\"name\": \"Sita Devi\", \"language\": \"hi\", \"village\": \"Rampur\"}, \"applicant_note\": \"मेरी फसल बाढ़ में बर्बाद हो गई।\", \"incident_date\": \"2026-10-01\", \"submitted_on\": \"2026-10-14\", \"fields\": {\"crop\": \"Wheat\", \"area_acres\": 1.0, \"loss_percent\": 80, \"survey_number\": \"42/7\"}, \"documents\": [{\"type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires_on\": null}, {\"type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires_on\": null}, {\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "crop_loss_claim"
+    },
+    "output": "{\"title\": \"Crop Loss Compensation Claim\", \"required_fields\": [\"crop\", \"area_acres\", \"loss_percent\", \"survey_number\"], \"required_documents\": [{\"type\": \"land_record\", \"label\": \"Land record (RTC / 7-12 extract)\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"crop_loss_photo\", \"label\": \"Geo-tagged photo of the damaged crop\"}], \"claim_window_days\": 7, \"rules\": [\"Claim must be filed within 7 days of the loss event.\", \"Name on land record, bank passbook and Aadhaar must match the applicant.\", \"Loss below 33% is not eligible fo…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002"
+    },
+    "output": "{\"rule\": \"7 days from incident\", \"days_elapsed\": 13, \"within_limit\": false}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "land_record"
+    },
+    "output": "{\"doc_type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "crop_loss_photo"
+    },
+    "output": "{\"doc_type\": \"crop_loss_photo\", \"present\": true, \"name_on_doc\": null, \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1002 (फसल नुकसान दावा): दावा घटना के 7 दिन की सीमा के बाद सल्ल��ा गया है (13 दिन)। सभी दस्तावेज़ सही हैं। सिफारिश: अस्वीकार करें, या विनाय��ि प्रक्रिया हो तो अधिकारी द्वारा जाँच के लिए एस्केलेट करें।",
+     "missing_items": [],
+     "risks": [
+      {
+       "issue": "ක्लेम ಅವಧಿ ಮೀರಿ ಸಲ್ಲಿಸಲಾಗಿದೆ (ಯೋಜನೆಯ 7 ದಿನಗಳ ಮಿತಿ ಉಲ್ಲಂಘನೆ)",
+       "evidence": "days_elapsed: 13, within_limit: false; rule: 7 days from incident; incident_date 2026-10-01, submitted_on 2026-10-14"
+      },
+      {
+       "issue": "ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಫೋಟೋ ಇದೆ ಆದರೆ ಜಿಯೋ-ಟ್ಯಾಗ್ ದೃಢೀಕರಣ ಉಪಕರಣದಿಂದ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ",
+       "evidence": "crop_loss_photo: present: true, name_on_doc: null, issues: []"
+      }
+     ],
+     "reason": "ದಾಖಲೆಗಳು ಮತ್ತು ಕ್ಷೇತ್ರ ಮಾಹಿತಿ ಯೋಜನೆಯ ಅವಶ್ಯಕತೆಗಳನ್ನು ಪೂರೈಸುತ್ತವೆ: ಭೂಮಿ ದಾಖಲೆ, ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್ ಮತ್ತು ಆಧಾರ್ ಮೇಲೆ ಹೆಸರು \"Sita Devi\" ಎಂದು ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ; ನಷ್ಟ 80% (ಕನಿಷ್ಠ 33% ಅಗತ್ಯ). ಆದರೆ ಸಲ್ಲಿಕೆ ಅವಧಿ 7 ದಿನಗಳನ್ನು ಮೀರಿದೆ (13 ದಿನ). ಇದನ್ನು ಅರ್ಜಿದಾರರು ಸರಿಪಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ಆದ್ದರಿಂದ request_more_info ಸೂಕ್ತವಲ್ಲ. ಯೋಜನೆಯ ನಿಯಮಗಳಲ್ಲಿ ವಿನಾಯಿತಿ ಪ್ರಕ್ರಿಯೆ ಉಲ್ಲೇಖಿಸಲ್ಪಟ್ಟಿಲ್ಲ, ಆದ್ದರಿಂದ ಅಧಿಕಾರಿ ವಿವೇಚನೆಯಿಂದ ನಿರ್ಧರಿಸಬೇಕು.",
+     "recommended_action": "reject",
+     "message_to_applicant": "नमस्ते सीता देवी जी, आपका फसल नुकसान का दावा तय 7 दिनों की समय-सीमा के बाद मिला है (नुकसान की तारीख 1 अक्टूबर 2026, दावा 14 अक्टूबर 2026)। इसलिए इस दावे को आगे बढ़ाने में दिक्कत है। आपके भूमि रिकॉर्ड, बैंक पासबुक, आधार कार्ड और फोटो सही पाए गए हैं। कृपया इस बारे में अपने कार्यालय के अधिकारी से बात करें।",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1003",
+  "lang": "kn",
+  "triage": {
+   "summary": "C-1003 (ಅರ್ಜುನ್ ರಾವ್, ಪೋಸ್ಟ್-ಮ್ಯಾಟ್ರಿಕ್ ವಿದ್ಯಾರ್ಥಿವೇತನ): ಅರ್ಜಿ ಸಲ್ಲಿಕೆ ಅವಧಿಯೊಳಗಿದೆ ಮತ್ತು ಆದಾಯ ಮಿತಿಯೊಳಗಿದೆ, ಆದರೆ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಅವಧಿ ಮೀರಿದೆ ಮತ್ತು ಕೊನೆಯ ಅರ್ಹತಾ ಅಂಕಪಟ್ಟಿ ಲಗತ್ತಿಸಿಲ್ಲ. ಅರ್ಜಿದಾರರಿಂದ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ.",
+   "missing_items": [
+    {
+     "item": "ಮಾನ್ಯ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ (ಸಲ್ಲಿಕೆ ದಿನಾಂಕದಂದು ಅವಧಿ ಮೀರದಿರಬೇಕು)",
+     "why": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಪ್ರಮಾಣಪತ್ರ 2026-06-30ರಂದು ಅವಧಿ ಮೀರಿದೆ; ಸಲ್ಲಿಕೆ ದಿನಾಂಕ 2026-10-20. ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಸಲ್ಲಿಕೆ ದಿನಾಂಕದಂದು ಅವಧಿ ಮೀರಿರಬಾರದು."
+    },
+    {
+     "item": "ಕೊನೆಯ ಅರ್ಹತಾ ಅಂಕಪಟ್ಟಿ (Last qualifying marksheet)",
+     "why": "ಯೋಜನೆಯ ಕಡ್ಡಾಯ ದಾಖಲೆಯಾಗಿದೆ; ಕೇಸ್ ಫೈಲ್‌ನಲ್ಲಿ 'marksheet not attached' ಎಂದು ತೋರಿಸುತ್ತದೆ."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಅವಧಿ ಮೀರಿದೆ",
+     "evidence": "income_certificate: issue 'expired' — 'Expired on 2026-06-30, submitted 2026-10-20'"
+    },
+    {
+     "issue": "ಕಡ್ಡಾಯ ದಾಖಲೆ ಲಗತ್ತಿಸಿಲ್ಲ (ಕೊನೆಯ ಅರ್ಹತಾ ಅಂಕಪಟ್ಟಿ)",
+     "evidence": "marksheet: present=false — 'marksheet not attached' (code: missing)"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "ಸಲ್ಲಿಕೆ ದಿನಾಂಕ 2026-10-20 ಆಗಿದ್ದು ಅಂತಿಮ ದಿನಾಂಕ 2026-10-31ಕ್ಕಿಂತ ಮೊದಲಿದೆ. ಕುಟುಂಬದ ವಾರ್ಷಿಕ ಆದಾಯ ₹1,80,000 ಆಗಿದ್ದು ₹2,50,000 ಮಿತಿಯೊಳಗಿದೆ. ಆಧಾರ್, ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್ ಮತ್ತು ಪ್ರವೇಶ ಪತ್ರ ಸರಿಯಾಗಿವೆ ಮತ್ತು ಹೆಸರು ಹೊಂದುತ್ತದೆ. ಆದರೆ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಅವಧಿ ಮೀರಿದೆ ಮತ್ತು ಅಂಕಪಟ್ಟಿ ಲಗತ್ತಿಸಿಲ್ಲ. ಇವೆರಡನ್ನೂ ಅರ್ಜಿದಾರರು ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕಾರಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ.",
+   "message_to_applicant": "Dear Arjun Rao, thank you for applying for the Post-Matric Scholarship. To continue your application, please bring or upload the following: 1) A new income certificate that is still valid on the date you submitted (your current one expired on 30 June 2026). 2) Your last qualifying marksheet, which was not attached. Once we receive these, we will continue reviewing your application. Thank you.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003"
+    },
+    "output": "{\"id\": \"C-1003\", \"scheme_id\": \"scholarship_post_matric\", \"applicant\": {\"name\": \"Arjun Rao\", \"language\": \"en\", \"village\": \"Mysuru\"}, \"applicant_note\": \"Applying for the first-year B.Sc. scholarship.\", \"incident_date\": null, \"submitted_on\": \"2026-10-20\", \"fields\": {\"course\": \"B.Sc. Physics\", \"annual_income\": 180000, \"institution\": \"Govt. First Grade College\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"expires_on\": null}, {\"type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"expires_on\": \"2026-06-30\"}, {\"type\": \"bank_passbook\", \"present…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "scholarship_post_matric"
+    },
+    "output": "{\"title\": \"Post-Matric Scholarship\", \"required_fields\": [\"course\", \"annual_income\", \"institution\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"income_certificate\", \"label\": \"Income certificate (valid for 12 months from issue)\"}, {\"type\": \"marksheet\", \"label\": \"Last qualifying marksheet\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"admission_letter\", \"label\": \"Admission letter / bonafide certificate\"}], \"deadline\": \"2026-10-31\", \"rules\": [\"Application must be submitted on or before 31 Oct 2026.\", \"Income certificate must not be …",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003"
+    },
+    "output": "{\"rule\": \"deadline 2026-10-31\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "income_certificate"
+    },
+    "output": "{\"doc_type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": [{\"code\": \"expired\", \"detail\": \"Expired on 2026-06-30, submitted 2026-10-20\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "admission_letter"
+    },
+    "output": "{\"doc_type\": \"admission_letter\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "marksheet"
+    },
+    "output": "{\"doc_type\": \"marksheet\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"marksheet not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1003 (ಅರ್ಜುನ್ ರಾವ್, ಪೋಸ್ಟ್-ಮ್ಯಾಟ್ರಿಕ್ ವಿದ್ಯಾರ್ಥಿವೇತನ): ಅರ್ಜಿ ಸಲ್ಲಿಕೆ ಅವಧಿಯೊಳಗಿದೆ ಮತ್ತು ಆದಾಯ ಮಿತಿಯೊಳಗಿದೆ, ಆದರೆ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಅವಧಿ ಮೀರಿದೆ ಮತ್ತು ಕೊನೆಯ ಅರ್ಹತಾ ಅಂಕಪಟ್ಟಿ ಲಗತ್ತಿಸಿಲ್ಲ. ಅರ್ಜಿದಾರರಿಂದ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ.",
+     "missing_items": [
+      {
+       "item": "ಮಾನ್ಯ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ (ಸಲ್ಲಿಕೆ ದಿನಾಂಕದಂದು ಅವಧಿ ಮೀರದಿರಬೇಕು)",
+       "why": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಪ್ರಮಾಣಪತ್ರ 2026-06-30ರಂದು ಅವಧಿ ಮೀರಿದೆ; ಸಲ್ಲಿಕೆ ದಿನಾಂಕ 2026-10-20. ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಸಲ್ಲಿಕೆ ದಿನಾಂಕದಂದು ಅವಧಿ ಮೀರಿರಬಾರದು."
+      },
+      {
+       "item": "ಕೊನೆಯ ಅರ್ಹತಾ ಅಂಕಪಟ್ಟಿ (Last qualifying marksheet)",
+       "why": "ಯೋಜನೆಯ ಕಡ್ಡಾಯ ದಾಖಲೆಯಾಗಿದೆ; ಕೇಸ್ ಫೈಲ್‌ನಲ್ಲಿ 'marksheet not attached' ಎಂದು ತೋರಿಸುತ್ತದೆ."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಅವಧಿ ಮೀರಿದೆ",
+       "evidence": "income_certificate: issue 'expired' — 'Expired on 2026-06-30, submitted 2026-10-20'"
+      },
+      {
+       "issue": "ಕಡ್ಡಾಯ ದಾಖಲೆ ಲಗತ್ತಿಸಿಲ್ಲ (ಕೊನೆಯ ಅರ್ಹತಾ ಅಂಕಪಟ್ಟಿ)",
+       "evidence": "marksheet: present=false — 'marksheet not attached' (code: missing)"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "ಸಲ್ಲಿಕೆ ದಿನಾಂಕ 2026-10-20 ಆಗಿದ್ದು ಅಂತಿಮ ದಿನಾಂಕ 2026-10-31ಕ್ಕಿಂತ ಮೊದಲಿದೆ. ಕುಟುಂಬದ ವಾರ್ಷಿಕ ಆದಾಯ ₹1,80,000 ಆಗಿದ್ದು ₹2,50,000 ಮಿತಿಯೊಳಗಿದೆ. ಆಧಾರ್, ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್ ಮತ್ತು ಪ್ರವೇಶ ಪತ್ರ ಸರಿಯಾಗಿವೆ ಮತ್ತು ಹೆಸರು ಹೊಂದುತ್ತದೆ. ಆದರೆ ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಅವಧಿ ಮೀರಿದೆ ಮತ್ತು ಅಂಕಪಟ್ಟಿ ಲಗತ್ತಿಸಿಲ್ಲ. ಇವೆರಡನ್ನೂ ಅರ್ಜಿದಾರರು ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕಾರಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ.",
+     "message_to_applicant": "Dear Arjun Rao, thank you for applying for the Post-Matric Scholarship. To continue your application, please bring or upload the following: 1) A new income certificate that is still valid on the date you submitted (your current one expired on 30 June 2026). 2) Your last qualifying marksheet, which was not attached. Once we receive these, we will continue reviewing your application. Thank you.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1004",
+  "lang": "kn",
+  "triage": {
+   "summary": "ಅರ್ಜಿ C-1004 (ಕಾವ್ಯ ಶೆಟ್ಟಿ, ಪೋಸ್ಟ್-ಮ್ಯಾಟ್ರಿಕ್ ವಿದ್ಯಾರ್ಥಿವೇತನ) ಎಲ್ಲಾ ಯೋಜನೆ ನಿಯಮಗಳನ್ನು ಪೂರೈಸುತ್ತದೆ. ಅನುಮೋದನೆಗೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ.",
+   "missing_items": [],
+   "risks": [],
+   "recommended_action": "approve",
+   "reason": "ಎಲ್ಲಾ ಐದು ಅಗತ್ಯ ದಾಖಲೆಗಳು ಇವೆ ಮತ್ತು ಎಲ್ಲವೂ ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತವೆ (ಯಾವುದೇ ಸಮಸ್ಯೆ ವರದಿಯಾಗಿಲ್ಲ). ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಮುಕ್ತಾಯಗೊಂಡಿಲ್ಲ (ಮುಕ್ತಾಯ ದಿನಾಂಕ 2027-03-31, ಸಲ್ಲಿಕೆ 2026-10-22). ವಾರ್ಷಿಕ ಆದಾಯ 120000 ಆಗಿದ್ದು 250000 ಮಿತಿಯೊಳಗಿದೆ. ಸಲ್ಲಿಕೆ ದಿನಾಂಕ 2026-10-22, ಗಡುವು 2026-10-31 ಒಳಗಿದೆ. ಅಗತ್ಯ ಕ್ಷೇತ್ರಗಳು (ಕೋರ್ಸ್, ಆದಾಯ, ಸಂಸ್ಥೆ) ತುಂಬಲಾಗಿದೆ. ಆದಾಯ ಪ್ರಮಾಣಪತ್ರದ ವಿತರಣಾ ದಿನಾಂಕ ಕೇಸ್ ಫೈಲ್‌ನಲ್ಲಿ ಇಲ್ಲ; 12 ತಿಂಗಳ ಮಾನ್ಯತೆಯನ್ನು ಮುಕ್ತಾಯ ದಿನಾಂಕದ ಆಧಾರದಲ್ಲಿ ಪರಿಶೀಲಿಸಲಾಗಿದೆ, ಅಂತಿಮ ಅನುಮೋದನೆ ಮೊದಲು ಅದನ್ನು ಒಮ್ಮೆ ನೋಡಬಹುದು.",
+   "message_to_applicant": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಶೆಟ್ಟಿ ಅವರೇ, ನಿಮ್ಮ ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಜಿಗೆ ಬೇಕಾದ ಎಲ್ಲಾ ದಾಖಲೆಗಳು ಸರಿಯಾಗಿವೆ. ನೀವು ಈಗ ಏನೂ ಹೆಚ್ಚುವರಿಯಾಗಿ ತರಬೇಕಾಗಿಲ್ಲ. ಅಧಿಕಾರಿಗಳು ಅರ್ಜಿಯನ್ನು ಪರಿಶೀಲಿಸಿ ಅಂತಿಮ ನಿರ್ಧಾರವನ್ನು ನಿಮಗೆ ತಿಳಿಸುತ್ತಾರೆ. ಧನ್ಯವಾದಗಳು.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004"
+    },
+    "output": "{\"id\": \"C-1004\", \"scheme_id\": \"scholarship_post_matric\", \"applicant\": {\"name\": \"Kavya Shetty\", \"language\": \"kn\", \"village\": \"Udupi\"}, \"applicant_note\": \"ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ.\", \"incident_date\": null, \"submitted_on\": \"2026-10-22\", \"fields\": {\"course\": \"B.Com\", \"annual_income\": 120000, \"institution\": \"Govt. First Grade College\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"expires_on\": null}, {\"type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"expires_on\": \"2027-03-31\"}, {\"type\": \"marksheet\", \"present\": true, \"name…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "scholarship_post_matric"
+    },
+    "output": "{\"title\": \"Post-Matric Scholarship\", \"required_fields\": [\"course\", \"annual_income\", \"institution\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"income_certificate\", \"label\": \"Income certificate (valid for 12 months from issue)\"}, {\"type\": \"marksheet\", \"label\": \"Last qualifying marksheet\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"admission_letter\", \"label\": \"Admission letter / bonafide certificate\"}], \"deadline\": \"2026-10-31\", \"rules\": [\"Application must be submitted on or before 31 Oct 2026.\", \"Income certificate must not be …",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004"
+    },
+    "output": "{\"rule\": \"deadline 2026-10-31\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "income_certificate"
+    },
+    "output": "{\"doc_type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "marksheet"
+    },
+    "output": "{\"doc_type\": \"marksheet\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "admission_letter"
+    },
+    "output": "{\"doc_type\": \"admission_letter\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "ಅರ್ಜಿ C-1004 (ಕಾವ್ಯ ಶೆಟ್ಟಿ, ಪೋಸ್ಟ್-ಮ್ಯಾಟ್ರಿಕ್ ವಿದ್ಯಾರ್ಥಿವೇತನ) ಎಲ್ಲಾ ಯೋಜನೆ ನಿಯಮಗಳನ್ನು ಪೂರೈಸುತ್ತದೆ. ಅನುಮೋದನೆಗೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ.",
+     "missing_items": [],
+     "risks": [],
+     "recommended_action": "approve",
+     "reason": "ಎಲ್ಲಾ ಐದು ಅಗತ್ಯ ದಾಖಲೆಗಳು ಇವೆ ಮತ್ತು ಎಲ್ಲವೂ ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತವೆ (ಯಾವುದೇ ಸಮಸ್ಯೆ ವರದಿಯಾಗಿಲ್ಲ). ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ ಮುಕ್ತಾಯಗೊಂಡಿಲ್ಲ (ಮುಕ್ತಾಯ ದಿನಾಂಕ 2027-03-31, ಸಲ್ಲಿಕೆ 2026-10-22). ವಾರ್ಷಿಕ ಆದಾಯ 120000 ಆಗಿದ್ದು 250000 ಮಿತಿಯೊಳಗಿದೆ. ಸಲ್ಲಿಕೆ ದಿನಾಂಕ 2026-10-22, ಗಡುವು 2026-10-31 ಒಳಗಿದೆ. ಅಗತ್ಯ ಕ್ಷೇತ್ರಗಳು (ಕೋರ್ಸ್, ಆದಾಯ, ಸಂಸ್ಥೆ) ತುಂಬಲಾಗಿದೆ. ಆದಾಯ ಪ್ರಮಾಣಪತ್ರದ ವಿತರಣಾ ದಿನಾಂಕ ಕೇಸ್ ಫೈಲ್‌ನಲ್ಲಿ ಇಲ್ಲ; 12 ತಿಂಗಳ ಮಾನ್ಯತೆಯನ್ನು ಮುಕ್ತಾಯ ದಿನಾಂಕದ ಆಧಾರದಲ್ಲಿ ಪರಿಶೀಲಿಸಲಾಗಿದೆ, ಅಂತಿಮ ಅನುಮೋದನೆ ಮೊದಲು ಅದನ್ನು ಒಮ್ಮೆ ನೋಡಬಹುದು.",
+     "message_to_applicant": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಶೆಟ್ಟಿ ಅವರೇ, ನಿಮ್ಮ ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಜಿಗೆ ಬೇಕಾದ ಎಲ್ಲಾ ದಾಖಲೆಗಳು ಸರಿಯಾಗಿವೆ. ನೀವು ಈಗ ಏನೂ ಹೆಚ್ಚುವರಿಯಾಗಿ ತರಬೇಕಾಗಿಲ್ಲ. ಅಧಿಕಾರಿಗಳು ಅರ್ಜಿಯನ್ನು ಪರಿಶೀಲಿಸಿ ಅಂತಿಮ ನಿರ್ಧಾರವನ್ನು ನಿಮಗೆ ತಿಳಿಸುತ್ತಾರೆ. ಧನ್ಯವಾದಗಳು.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1005",
+  "lang": "kn",
+  "triage": {
+   "summary": "C-1005 (ರೇಷನ್ ಕಾರ್ಡ್ ನವೀಕರಣ, ಕುಟುಂಬಕ್ಕೆ ಹೊಸ ಸದಸ್ಯರ ಸೇರ್ಪಡೆ): ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳಿವೆ, ಆದರೆ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ. ಅರ್ಜಿದಾರರಿಂದ ಸರಿಯಾದ ವಿಳಾಸ ಪುರಾವೆ ಕೇಳಬೇಕು.",
+   "missing_items": [
+    {
+     "item": "ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi' ಇರುವ ವಿಳಾಸ ಪುರಾವೆ, ಅಥವಾ ಹೆಸರು ಬದಲಾವಣೆಯ ಅಧಿಕೃತ ದಾಖಲೆ (ಉದಾ: ವಿವಾಹ ಪ್ರಮಾಣಪತ್ರ)",
+     "why": "ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ಪ್ರಸ್ತುತ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದೆ."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ; ಇದು ಯೋಜನೆಯ ನಿಯಮವನ್ನು ಉಲ್ಲಂಘಿಸುತ್ತದೆ.",
+     "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch)"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದ್ದು, ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi'. ಇದನ್ನು ಅರ್ಜಿದಾರರೇ ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕರಿಸುವ ಬದಲು ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ. ಆಧಾರ್ ಮತ್ತು ಹಾಲಿ ರೇಷನ್ ಕಾರ್ಡ್ ಪರಿಶೀಲನೆಯಲ್ಲಿ ಸಮಸ್ಯೆ ತೋರಿಸಲಿಲ್ಲ. ಸಮಯ-ಮಿತಿ ಇಲ್ಲ. ಅರ್ಜಿದಾರರು ನಿಜವಾಗಿಯೂ ಮುಖ್ಯಸ್ಥರೇ ಎಂಬುದನ್ನು ಅಧಿಕಾರಿ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬೇಕು; ಈ ಬಗ್ಗೆ ಉಪಕರಣದಿಂದ ಸಾಕ್ಷ್ಯ ಸಿಕ್ಕಿಲ್ಲ.",
+   "message_to_applicant": "नमस्ते सुनीता देवी जी, आपके राशन कार्ड अपडेट के लिए कृपया एक ऐसा पता प्रमाण (address proof) लेकर आएँ जिस पर नाम \"Sunita Devi\" लिखा हो। अभी आपके पता प्रमाण पर नाम \"Sunita Kumari\" लिखा है। अगर आपका नाम बदला है (जैसे शादी के बाद), तो उसका प्रमाण पत्र भी साथ लाएँ। धन्यवाद।",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005"
+    },
+    "output": "{\"id\": \"C-1005\", \"scheme_id\": \"ration_card_update\", \"applicant\": {\"name\": \"Sunita Devi\", \"language\": \"hi\", \"village\": \"Barabanki\"}, \"applicant_note\": \"परिवार में एक नया सदस्य जोड़ना है।\", \"incident_date\": null, \"submitted_on\": \"2026-10-19\", \"fields\": {\"update_type\": \"add_member\", \"household_size\": 5}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"expires_on\": null}, {\"type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Sunita Kumari\", \"expires_on\": null}, {\"type\": \"existing_ration_card\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"expires_on\": null}…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "ration_card_update"
+    },
+    "output": "{\"title\": \"Ration Card Update\", \"required_fields\": [\"update_type\", \"household_size\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card of the head of household\"}, {\"type\": \"address_proof\", \"label\": \"Address proof\"}, {\"type\": \"existing_ration_card\", \"label\": \"Existing ration card\"}], \"claim_window_days\": null, \"rules\": [\"Name on address proof must match the head of household on Aadhaar.\", \"Existing ration card copy is mandatory for any update.\"]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005"
+    },
+    "output": "{\"rule\": \"no time limit for this scheme\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "address_proof"
+    },
+    "output": "{\"doc_type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Sunita Kumari\", \"issues\": [{\"code\": \"name_mismatch\", \"detail\": \"Applicant 'Sunita Devi' vs document 'Sunita Kumari'\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "existing_ration_card"
+    },
+    "output": "{\"doc_type\": \"existing_ration_card\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1005 (राशन कार्ड अपडेट, परिवार में नया सदस्य जोड़ना): सभी ज़रूरी दस्तावेज़ मौजूद हैं, पर पता प्रमाण पर नाम आवेदक के नाम से मेल नहीं खाता। आवेदक से सही पता प्रमाण माँगना चाहिए।</summary>\n<parameter name=\"missing_items\">[{\"item\": \"आवेदक के नाम 'Sunita Devi' वाला पता प्रमाण (address proof), या नाम में बदलाव का आधिकारिक प्रमाण (जैसे विवाह प्रमाण पत्र)\", \"why\": \"योजना का नियम है कि पता प्रमाण पर नाम आधार में दर्ज मुखिया के नाम से मेल खाना चाहिए। वर्तमान पता प्रमाण पर 'Sunita Kumari' लिखा है।\"}]",
+     "risks": [
+      {
+       "issue": "पता प्रमाण पर नाम आवेदक के नाम से मेल नहीं खाता, जो योजना के नियम का उल्लंघन है।",
+       "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch)"
+      },
+      {
+       "issue": "आधार कार्ड और मौजूदा राशन कार्ड पर नाम जाँचा गया और कोई समस्या नहीं मिली, पर आधार कार्ड मुखिया परिवार का है या नहीं, यह टूल से सत्यापित नहीं हुआ।",
+       "evidence": "aadhaar: present=true, name_on_doc='Sunita Devi', issues=[]; existing_ration_card: present=true, name_on_doc='Sunita Devi', issues=[]"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "योजना के नियम के अनुसार पता प्रमाण पर नाम आधार में दर्ज मुखिया के नाम से मेल खाना चाहिए। यहाँ पता प्रमाण पर 'Sunita Kumari' लिखा है, जबकि आवेदक का नाम 'Sunita Devi' है। यह समस्या आवेदक ठीक कर सकती है (सही नाम वाला पता प्रमाण या नाम बदलाव का प्रमाण पत्र देकर), इसलिए अस्वीकार करने के बजाय अतिरिक्त जानकारी माँगना उचित है। समय-सीमा की कोई बाध्यता नहीं है और बाकी दस्तावेज़ सही हैं। अधिकारी को यह भी जाँचना चाहिए कि आवेदक मुखिया है या नहीं।",
+     "message_to_applicant": "नमस्ते सुनीता देवी जी, आपके राशन कार्ड अपडेट के लिए कृपया एक ऐसा पता प्रमाण (address proof) लेकर आएँ जिस पर नाम \"Sunita Devi\" लिखा हो। अभी आपके पता प्रमाण पर नाम \"Sunita Kumari\" लिखा है। अगर आपका नाम बदला है (जैसे शादी के बाद), तो उसका प्रमाण पत्र भी साथ लाएँ। धन्यवाद।",
+     "confidence": "high"
+    },
+    "output": "submit_triage is missing required fields: ['missing_items']",
+    "is_error": true
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1005 (ರೇಷನ್ ಕಾರ್ಡ್ ನವೀಕರಣ, ಕುಟುಂಬಕ್ಕೆ ಹೊಸ ಸದಸ್ಯರ ಸೇರ್ಪಡೆ): ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳಿವೆ, ಆದರೆ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ. ಆರ್ಜಿದಾರರಿಂದ ಸರಿಯಾದ ವಿಳಾಸ ಪುರಾವೆ ಕೇಳಬೇಕು.</summary>\n<parameter name=\"missing_items\">[{\"item\": \"ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi' ಇರುವ ವಿಳಾಸ ಪುರಾವೆ, ಅಥವಾ ಹೆಸರು ಬದಲಾವಣೆಯ ಅಧಿಕೃತ ದಾಖಲೆ (ಉದಾ: ವಿವಾಹ ಪ್ರಮಾಣಪತ್ರ)\", \"why\": \"ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ಪ್ರಸ್ತುತ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದೆ.\"}]",
+     "risks": [
+      {
+       "issue": "ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿನ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ; ಇದು ಯೋಜನೆಯ ನಿಯಮವನ್ನು ಉಲ್ಲಂಘಿಸುತ್ತದೆ.",
+       "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch)"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದ್ದು, ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi'. ಇದನ್ನು ಅರ್ಜಿದಾರರೇ ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕರಿಸುವ ಬದಲು ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ. ಆಧಾರ್, ಹಾಲಿ ರೇಷನ್ ಕಾರ್ಡ್ ಮತ್ತು ಅರ್ಜಿಯ ಇತರ ಅಂಶಗಳು ಪರಿಶೀಲನೆಯಲ್ಲಿ ಸಮಸ್ಯೆ ತೋರಿಸಲಿಲ್ಲ. ಸಮಯ-ಮಿತಿ ಇಲ್ಲ. ಅರ್ಜಿದಾರರು ನಿಜವಾಗಿಯೂ ಮುಖ್ಯಸ್ಥರೇ ಎಂಬುದನ್ನು ಅಧಿಕಾರಿ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬೇಕು; ಈ ಬಗ್ಗೆ ಉಪಕರಣದಿಂದ ಯಾವುದೇ ಸಾಕ್ಷ್ಯ ಸಿಕ್ಕಿಲ್ಲ.",
+     "message_to_applicant": "नमस्ते सुनीता देवी जी, आपके राशन कार्ड अपडेट के लिए कृपया एक ऐसा पता प्रमाण (address proof) लेकर आएँ जिस पर नाम \"Sunita Devi\" लिखा हो। अभी आपके पता प्रमाण पर नाम \"Sunita Kumari\" लिखा है। अगर आपका नाम बदला है (जैसे शादी के बाद), तो उसका प्रमाण पत्र भी साथ लाएँ। धन्यवाद।",
+     "confidence": "high"
+    },
+    "output": "submit_triage is missing required fields: ['missing_items']",
+    "is_error": true
+   },
+   {
+    "step": 5,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1005 (ರೇಷನ್ ಕಾರ್ಡ್ ನವೀಕರಣ, ಕುಟುಂಬಕ್ಕೆ ಹೊಸ ಸದಸ್ಯರ ಸೇರ್ಪಡೆ): ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳಿವೆ, ಆದರೆ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ. ಅರ್ಜಿದಾರರಿಂದ ಸರಿಯಾದ ವಿಳಾಸ ಪುರಾವೆ ಕೇಳಬೇಕು.</summary>\n<parameter name=\"missing_items\">[{\"item\": \"ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi' ಇರುವ ವಿಳಾಸ ಪುರಾವೆ, ಅಥವಾ ಹೆಸರು ಬದಲಾವಣೆಯ ಅಧಿಕೃತ ದಾಖಲೆ (ಉದಾ: ವಿವಾಹ ಪ್ರಮಾಣಪತ್ರ)\", \"why\": \"ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ಪ್ರಸ್ತುತ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದೆ.\"}]</parameter>\n<parameter name=\"risks\">[{\"issue\": \"ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ; ಇದು ಯೋಜನೆಯ ನಿಯಮವನ್ನು ಉಲ್ಲಂಘಿಸುತ್ತದೆ.\", \"evidence\": \"Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch)\"}]</parameter>\n<parameter name=\"recommended_action\">request_more_info",
+     "reason": "ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದ್ದು, ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi'. ಇದನ್ನು ಅರ್ಜಿದಾರರೇ ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕರಿಸುವ ಬದಲು ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ. ಆಧಾರ್ ಮತ್ತು ಹಾಲಿ ರೇಷನ್ ಕಾರ್ಡ್ ಪರಿಶೀಲನೆಯಲ್ಲಿ ಸಮಸ್ಯೆ ತೋರಿಸಲಿಲ್ಲ. ಸಮಯ-ಮಿತಿ ಇಲ್ಲ. ಅರ್ಜಿದಾರರು ನಿಜವಾಗಿಯೂ ಮುಖ್ಯಸ್ಥರೇ ಎಂಬುದನ್ನು ಅಧಿಕಾರಿ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬೇಕು; ಈ ಬಗ್ಗೆ ಉಪಕರಣದಿಂದ ಸಾಕ್ಷ್ಯ ಸಿಕ್ಕಿಲ್ಲ.</parameter>\n<parameter name=\"message_to_applicant\">नमस्ते सुनीता देवी जी, आपके राशन कार्ड अपडेट के लिए कृपया एक ऐसा पता प्रमाण (address proof) लेकर आएँ जिस पर नाम \"Sunita Devi\" लिखा हो। अभी आपके पता प्रमाण पर नाम \"Sunita Kumari\" लिखा है। अगर आपका नाम बदला है (जैसे शादी के बाद), तो उसका प्रमाण पत्र भी साथ लाएँ। धन्यवाद।",
+     "confidence": "high"
+    },
+    "output": "submit_triage is missing required fields: ['missing_items', 'risks', 'recommended_action', 'message_to_applicant']",
+    "is_error": true
+   },
+   {
+    "step": 6,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1005 (ರೇಷನ್ ಕಾರ್ಡ್ ನವೀಕರಣ, ಕುಟುಂಬಕ್ಕೆ ಹೊಸ ಸದಸ್ಯರ ಸೇರ್ಪಡೆ): ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳಿವೆ, ಆದರೆ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ. ಅರ್ಜಿದಾರರಿಂದ ಸರಿಯಾದ ವಿಳಾಸ ಪುರಾವೆ ಕೇಳಬೇಕು.",
+     "missing_items": [
+      {
+       "item": "ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi' ಇರುವ ವಿಳಾಸ ಪುರಾವೆ, ಅಥವಾ ಹೆಸರು ಬದಲಾವಣೆಯ ಅಧಿಕೃತ ದಾಖಲೆ (ಉದಾ: ವಿವಾಹ ಪ್ರಮಾಣಪತ್ರ)",
+       "why": "ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ಪ್ರಸ್ತುತ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದೆ."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಅರ್ಜಿದಾರರ ಹೆಸರಿಗೆ ಹೊಂದುತ್ತಿಲ್ಲ; ಇದು ಯೋಜನೆಯ ನಿಯಮವನ್ನು ಉಲ್ಲಂಘಿಸುತ್ತದೆ.",
+       "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch)"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "ಯೋಜನೆಯ ನಿಯಮದ ಪ್ರಕಾರ ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿರುವ ಹೆಸರು ಆಧಾರ್‌ನಲ್ಲಿರುವ ಮುಖ್ಯಸ್ಥರ ಹೆಸರಿಗೆ ಹೊಂದಬೇಕು. ವಿಳಾಸ ಪುರಾವೆಯಲ್ಲಿ 'Sunita Kumari' ಎಂದಿದ್ದು, ಅರ್ಜಿದಾರರ ಹೆಸರು 'Sunita Devi'. ಇದನ್ನು ಅರ್ಜಿದಾರರೇ ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕರಿಸುವ ಬದಲು ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೇಳುವುದು ಸೂಕ್ತ. ಆಧಾರ್ ಮತ್ತು ಹಾಲಿ ರೇಷನ್ ಕಾರ್ಡ್ ಪರಿಶೀಲನೆಯಲ್ಲಿ ಸಮಸ್ಯೆ ತೋರಿಸಲಿಲ್ಲ. ಸಮಯ-ಮಿತಿ ಇಲ್ಲ. ಅರ್ಜಿದಾರರು ನಿಜವಾಗಿಯೂ ಮುಖ್ಯಸ್ಥರೇ ಎಂಬುದನ್ನು ಅಧಿಕಾರಿ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬೇಕು; ಈ ಬಗ್ಗೆ ಉಪಕರಣದಿಂದ ಸಾಕ್ಷ್ಯ ಸಿಕ್ಕಿಲ್ಲ.",
+     "message_to_applicant": "नमस्ते सुनीता देवी जी, आपके राशन कार्ड अपडेट के लिए कृपया एक ऐसा पता प्रमाण (address proof) लेकर आएँ जिस पर नाम \"Sunita Devi\" लिखा हो। अभी आपके पता प्रमाण पर नाम \"Sunita Kumari\" लिखा है। अगर आपका नाम बदला है (जैसे शादी के बाद), तो उसका प्रमाण पत्र भी साथ लाएँ। धन्यवाद।",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1006",
+  "lang": "kn",
+  "triage": {
+   "summary": "C-1006 (ರೇಷನ್ ಕಾರ್ಡ್ ವಿಳಾಸ ಬದಲಾವಣೆ): ಆಧಾರ್ ಮತ್ತು ವಿಳಾಸ ದಾಖಲೆ ಸರಿಯಾಗಿವೆ, ಆದರೆ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ಪ್ರತಿ ಮತ್ತು ಕುಟುಂಬದ ಸದಸ್ಯರ ಸಂಖ್ಯೆ (household_size) ಕಾಣೆಯಾಗಿದೆ. ಅರ್ಜಿದಾರರಿಂದ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೋರಿ.",
+   "missing_items": [
+    {
+     "item": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ಪ್ರತಿ (existing_ration_card)",
+     "why": "ಯಾವುದೇ ನವೀಕರಣಕ್ಕೆ ಇದು ಕಡ್ಡಾಯ ದಾಖಲೆ. ಕೇಸ್ ಫೈಲ್‌ನಲ್ಲಿ ಇದು ಲಗತ್ತಿಸಲಾಗಿಲ್ಲ (validate_document: 'existing_ration_card not attached')."
+    },
+    {
+     "item": "ಕುಟುಂಬದ ಸದಸ್ಯರ ಸಂಖ್ಯೆ (household_size)",
+     "why": "ಯೋಜನೆಯ ಕಡ್ಡಾಯ ಫೀಲ್ಡ್ ಆಗಿದೆ, ಆದರೆ ಕೇಸ್ ಫೀಲ್ಡ್‌ಗಳಲ್ಲಿ ಕೇವಲ update_type=address_change ಮಾತ್ರ ಇದೆ."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ದಾಖಲೆ ಇಲ್ಲ",
+     "evidence": "existing_ration_card present: false, issues: [{code: 'missing', detail: 'existing_ration_card not attached'}]"
+    },
+    {
+     "issue": "ಕಡ್ಡಾಯ ಫೀಲ್ಡ್ household_size ಭರ್ತಿಯಾಗಿಲ್ಲ",
+     "evidence": "fields: {update_type: 'address_change'}; required_fields: ['update_type', 'household_size']"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "ಯೋಜನೆಯ ನಿಯಮ: 'ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ಪ್ರತಿ ಯಾವುದೇ ನವೀಕರಣಕ್ಕೆ ಕಡ್ಡಾಯ.' ಈ ದಾಖಲೆ ಕಾಣೆಯಾಗಿರುವುದರಿಂದ ಕೇಸ್ ಮುಂದುವರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. household_size ಫೀಲ್ಡ್ ಕೂಡ ಇಲ್ಲ. ಇವೆರಡನ್ನೂ ಅರ್ಜಿದಾರರು ಸುಲಭವಾಗಿ ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕಾರಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೋರುವುದು ಸೂಕ್ತ. ಆಧಾರ್ ಮತ್ತು ವಿಳಾಸ ದಾಖಲೆಯಲ್ಲಿ ಹೆಸರು ಹೊಂದಾಣಿಕೆಯಾಗಿದೆ (Mohammed Irfan), ಸಮಯ ಮಿತಿ ಇಲ್ಲ.",
+   "message_to_applicant": "Dear Mohammed Irfan, thank you for your address change request. To continue, please bring or upload the following: 1) A copy of your existing ration card (this is required for any update). 2) The number of members in your household (household size). Your Aadhaar and address proof are already received and look good. Thank you.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006"
+    },
+    "output": "{\"id\": \"C-1006\", \"scheme_id\": \"ration_card_update\", \"applicant\": {\"name\": \"Mohammed Irfan\", \"language\": \"en\", \"village\": \"Bengaluru\"}, \"applicant_note\": \"Change of address after moving house.\", \"incident_date\": null, \"submitted_on\": \"2026-10-21\", \"fields\": {\"update_type\": \"address_change\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"expires_on\": null}, {\"type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"expires_on\": null}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "ration_card_update"
+    },
+    "output": "{\"title\": \"Ration Card Update\", \"required_fields\": [\"update_type\", \"household_size\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card of the head of household\"}, {\"type\": \"address_proof\", \"label\": \"Address proof\"}, {\"type\": \"existing_ration_card\", \"label\": \"Existing ration card\"}], \"claim_window_days\": null, \"rules\": [\"Name on address proof must match the head of household on Aadhaar.\", \"Existing ration card copy is mandatory for any update.\"]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006"
+    },
+    "output": "{\"rule\": \"no time limit for this scheme\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "address_proof"
+    },
+    "output": "{\"doc_type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "existing_ration_card"
+    },
+    "output": "{\"doc_type\": \"existing_ration_card\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"existing_ration_card not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1006 (ರೇಷನ್ ಕಾರ್ಡ್ ವಿಳಾಸ ಬದಲಾವಣೆ): ಆಧಾರ್ ಮತ್ತು ವಿಳಾಸ ದಾಖಲೆ ಸರಿಯಾಗಿವೆ, ಆದರೆ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ಪ್ರತಿ ಮತ್ತು ಕುಟುಂಬದ ಸದಸ್ಯರ ಸಂಖ್ಯೆ (household_size) ಕಾಣೆಯಾಗಿದೆ. ಅರ್ಜಿದಾರರಿಂದ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೋರಿ.",
+     "missing_items": [
+      {
+       "item": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ಪ್ರತಿ (existing_ration_card)",
+       "why": "ಯಾವುದೇ ನವೀಕರಣಕ್ಕೆ ಇದು ಕಡ್ಡಾಯ ದಾಖಲೆ. ಕೇಸ್ ಫೈಲ್‌ನಲ್ಲಿ ಇದು ಲಗತ್ತಿಸಲಾಗಿಲ್ಲ (validate_document: 'existing_ration_card not attached')."
+      },
+      {
+       "item": "ಕುಟುಂಬದ ಸದಸ್ಯರ ಸಂಖ್ಯೆ (household_size)",
+       "why": "ಯೋಜನೆಯ ಕಡ್ಡಾಯ ಫೀಲ್ಡ್ ಆಗಿದೆ, ಆದರೆ ಕೇಸ್ ಫೀಲ್ಡ್‌ಗಳಲ್ಲಿ ಕೇವಲ update_type=address_change ಮಾತ್ರ ಇದೆ."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ದಾಖಲೆ ಇಲ್ಲ",
+       "evidence": "existing_ration_card present: false, issues: [{code: 'missing', detail: 'existing_ration_card not attached'}]"
+      },
+      {
+       "issue": "ಕಡ್ಡಾಯ ಫೀಲ್ಡ್ household_size ಭರ್ತಿಯಾಗಿಲ್ಲ",
+       "evidence": "fields: {update_type: 'address_change'}; required_fields: ['update_type', 'household_size']"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "ಯೋಜನೆಯ ನಿಯಮ: 'ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೇಷನ್ ಕಾರ್ಡ್ ಪ್ರತಿ ಯಾವುದೇ ನವೀಕರಣಕ್ಕೆ ಕಡ್ಡಾಯ.' ಈ ದಾಖಲೆ ಕಾಣೆಯಾಗಿರುವುದರಿಂದ ಕೇಸ್ ಮುಂದುವರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. household_size ಫೀಲ್ಡ್ ಕೂಡ ಇಲ್ಲ. ಇವೆರಡನ್ನೂ ಅರ್ಜಿದಾರರು ಸುಲಭವಾಗಿ ಸರಿಪಡಿಸಬಹುದಾದ್ದರಿಂದ ತಿರಸ್ಕಾರಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಕೋರುವುದು ಸೂಕ್ತ. ಆಧಾರ್ ಮತ್ತು ವಿಳಾಸ ದಾಖಲೆಯಲ್ಲಿ ಹೆಸರು ಹೊಂದಾಣಿಕೆಯಾಗಿದೆ (Mohammed Irfan), ಸಮಯ ಮಿತಿ ಇಲ್ಲ.",
+     "message_to_applicant": "Dear Mohammed Irfan, thank you for your address change request. To continue, please bring or upload the following: 1) A copy of your existing ration card (this is required for any update). 2) The number of members in your household (household size). Your Aadhaar and address proof are already received and look good. Thank you.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1001",
+  "lang": "en",
+  "triage": {
+   "summary": "C-1001 (crop loss, Ragi, Hosahalli): filed within the 7-day window and loss is 60%, above the 33% minimum. Two problems block approval: the geo-tagged crop photo is missing, and the bank passbook name is only a partial match. Recommend requesting the missing photo and a corrected passbook.",
+   "missing_items": [
+    {
+     "item": "Geo-tagged photo of the damaged crop",
+     "why": "Required document not attached (validate_document: 'crop_loss_photo not attached', code 'missing')."
+    },
+    {
+     "item": "Bank passbook first page showing the full name 'Ramesh Gowda'",
+     "why": "Name on passbook does not fully match applicant (validate_document: 'Applicant 'Ramesh Gowda' vs document 'Ramesh G'', code 'name_partial_match'). Scheme requires the name to match on the passbook."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "Required geo-tagged crop loss photo is missing",
+     "evidence": "crop_loss_photo not attached (code: missing)"
+    },
+    {
+     "issue": "Bank passbook name only partially matches applicant",
+     "evidence": "Applicant 'Ramesh Gowda' vs document 'Ramesh G' (code: name_partial_match); scheme rule: name on land record, bank passbook and Aadhaar must match the applicant"
+    },
+    {
+     "issue": "Filing deadline is close",
+     "evidence": "days_elapsed: 6, rule: 7 days from incident, within_limit: true. Applicant has about one day left to resubmit if the window is not reopened."
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "The case is not ineligible: the deadline is met (6 of 7 days), the loss of 60% exceeds the 33% threshold, and the land record and Aadhaar match. The applicant can fix both gaps by supplying the photo and a passbook showing the full name, so request_more_info is preferred over reject. The officer should note that the 7-day window closes soon, so the request should go out quickly. Confidence is high because the blockers are clear from the tool results.",
+   "message_to_applicant": "ನಮಸ್ಕಾರ ರಮೇಶ್ ಗೌಡ ಅವರೇ, ನಿಮ್ಮ ಬೆಳೆ ಹಾನಿ ಕ್ಲೇಮ್ ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಸಲ್ಲಿಸಿ:\n1. ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಫೋಟೋ (ಜಿಪಿಎಸ್ ಸ್ಥಳ ಮಾಹಿತಿಯೊಂದಿಗೆ).\n2. ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಮೊದಲ ಪುಟ, ಅದರಲ್ಲಿ ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರು \"ರಮೇಶ್ ಗೌಡ\" ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣಬೇಕು. ಈಗ ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ \"Ramesh G\" ಎಂದಿದೆ.\nದಯವಿಟ್ಟು ಇವುಗಳನ್ನು ಬೇಗ ಸಲ್ಲಿಸಿ, ಏಕೆಂದರೆ ಕ್ಲೇಮ್ ಸಲ್ಲಿಸಲು ಅವಧಿ ಸೀಮಿತವಾಗಿದೆ. ಧನ್ಯವಾದಗಳು.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001"
+    },
+    "output": "{\"id\": \"C-1001\", \"scheme_id\": \"crop_loss_claim\", \"applicant\": {\"name\": \"Ramesh Gowda\", \"language\": \"kn\", \"village\": \"Hosahalli\"}, \"applicant_note\": \"ನನ್ನ ಬೆಳೆ ಮಳೆಯಿಂದ ಹಾನಿಯಾಗಿದೆ.\", \"incident_date\": \"2026-10-12\", \"submitted_on\": \"2026-10-18\", \"fields\": {\"crop\": \"Ragi\", \"area_acres\": 2.5, \"loss_percent\": 60, \"survey_number\": \"118/2\"}, \"documents\": [{\"type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"expires_on\": null}, {\"type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Ramesh G\", \"expires_on\": null}, {\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\",…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "crop_loss_claim"
+    },
+    "output": "{\"title\": \"Crop Loss Compensation Claim\", \"required_fields\": [\"crop\", \"area_acres\", \"loss_percent\", \"survey_number\"], \"required_documents\": [{\"type\": \"land_record\", \"label\": \"Land record (RTC / 7-12 extract)\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"crop_loss_photo\", \"label\": \"Geo-tagged photo of the damaged crop\"}], \"claim_window_days\": 7, \"rules\": [\"Claim must be filed within 7 days of the loss event.\", \"Name on land record, bank passbook and Aadhaar must match the applicant.\", \"Loss below 33% is not eligible fo…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001"
+    },
+    "output": "{\"rule\": \"7 days from incident\", \"days_elapsed\": 6, \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "land_record"
+    },
+    "output": "{\"doc_type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Ramesh G\", \"issues\": [{\"code\": \"name_partial_match\", \"detail\": \"Applicant 'Ramesh Gowda' vs document 'Ramesh G'\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "crop_loss_photo"
+    },
+    "output": "{\"doc_type\": \"crop_loss_photo\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"crop_loss_photo not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1001 (crop loss, Ragi, Hosahalli): filed within the 7-day window and loss is 60%, above the 33% minimum. Two problems block approval: the geo-tagged crop photo is missing, and the bank passbook name is only a partial match. Recommend requesting the missing photo and a corrected passbook.",
+     "missing_items": [
+      {
+       "item": "Geo-tagged photo of the damaged crop",
+       "why": "Required document not attached (validate_document: 'crop_loss_photo not attached', code 'missing')."
+      },
+      {
+       "item": "Bank passbook first page showing the full name 'Ramesh Gowda'",
+       "why": "Name on passbook does not fully match applicant (validate_document: 'Applicant 'Ramesh Gowda' vs document 'Ramesh G'', code 'name_partial_match'). Scheme requires the name to match on the passbook."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "Required geo-tagged crop loss photo is missing",
+       "evidence": "crop_loss_photo not attached (code: missing)"
+      },
+      {
+       "issue": "Bank passbook name only partially matches applicant",
+       "evidence": "Applicant 'Ramesh Gowda' vs document 'Ramesh G' (code: name_partial_match); scheme rule: name on land record, bank passbook and Aadhaar must match the applicant"
+      },
+      {
+       "issue": "Filing deadline is close",
+       "evidence": "days_elapsed: 6, rule: 7 days from incident, within_limit: true. Applicant has about one day left to resubmit if the window is not reopened."
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "The case is not ineligible: the deadline is met (6 of 7 days), the loss of 60% exceeds the 33% threshold, and the land record and Aadhaar match. The applicant can fix both gaps by supplying the photo and a passbook showing the full name, so request_more_info is preferred over reject. The officer should note that the 7-day window closes soon, so the request should go out quickly. Confidence is high because the blockers are clear from the tool results.",
+     "message_to_applicant": "ನಮಸ್ಕಾರ ರಮೇಶ್ ಗೌಡ ಅವರೇ, ನಿಮ್ಮ ಬೆಳೆ ಹಾನಿ ಕ್ಲೇಮ್ ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಸಲ್ಲಿಸಿ:\n1. ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಜಿಯೋ-ಟ್ಯಾಗ್ ಮಾಡಿದ ಫೋಟೋ (ಜಿಪಿಎಸ್ ಸ್ಥಳ ಮಾಹಿತಿಯೊಂದಿಗೆ).\n2. ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಮೊದಲ ಪುಟ, ಅದರಲ್ಲಿ ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರು \"ರಮೇಶ್ ಗೌಡ\" ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣಬೇಕು. ಈಗ ಪಾಸ್‌ಬುಕ್‌ನಲ್ಲಿ \"Ramesh G\" ಎಂದಿದೆ.\nದಯವಿಟ್ಟು ಇವುಗಳನ್ನು ಬೇಗ ಸಲ್ಲಿಸಿ, ಏಕೆಂದರೆ ಕ್ಲೇಮ್ ಸಲ್ಲಿಸಲು ಅವಧಿ ಸೀಮಿತವಾಗಿದೆ. ಧನ್ಯವಾದಗಳು.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1002",
+  "lang": "en",
+  "triage": {
+   "summary": "C-1002 (Sita Devi, crop loss claim) fails the 7-day filing window: submitted 13 days after the 2026-10-01 incident. All documents and fields are complete, so the applicant cannot fix this by sending more paperwork. Escalating for officer decision on whether any exception applies.",
+   "missing_items": [],
+   "risks": [
+    {
+     "issue": "Claim filed outside the 7-day window required by the scheme",
+     "evidence": "check_deadline: rule '7 days from incident', days_elapsed: 13, within_limit: false (incident_date 2026-10-01, submitted_on 2026-10-14)"
+    },
+    {
+     "issue": "Filing deadline cannot be corrected by the applicant; the decision depends on whether the officer can accept a late claim (e.g. flood-related exception, not stated in scheme rules)",
+     "evidence": "Scheme rule: 'Claim must be filed within 7 days of the loss event.' Applicant note: 'मेरी फसल बाढ़ में बर्बाद हो गई।' (my crop was destroyed in floods)"
+    }
+   ],
+   "recommended_action": "escalate",
+   "reason": "The claim was submitted 13 days after the loss event, and the scheme requires filing within 7 days. The applicant cannot fix this with documents. The scheme rules give no exception, and the applicant's note says the loss was due to flooding, so an officer should decide whether a late-filing exception applies. Other checks passed: land record, passbook and Aadhaar all show \"Sita Devi\" with no issues; the crop loss photo is present; loss is 80% (above the 33% minimum); crop, area, loss percent and survey number are filled in. The geo-tag on the photo was not verified by any tool.",
+   "message_to_applicant": "नमस्ते सीता देवी जी, आपका फसल नुकसान दावा अधिकारी की जांच के लिए भेजा गया है। आपके दस्तावेज़ सही हैं, लेकिन दावा नुकसान की तारीख से 7 दिन के भीतर दर्ज होना चाहिए था, और आपका दावा 13 दिन बाद दर्ज हुआ है। अधिकारी देखेंगे कि क्या बाढ़ के कारण कोई छूट लागू हो सकती है। कृपया अपना फ़ोन नंबर उपलब्ध रखें, ताकि अधिकारी आपसे संपर्क कर सकें।",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002"
+    },
+    "output": "{\"id\": \"C-1002\", \"scheme_id\": \"crop_loss_claim\", \"applicant\": {\"name\": \"Sita Devi\", \"language\": \"hi\", \"village\": \"Rampur\"}, \"applicant_note\": \"मेरी फसल बाढ़ में बर्बाद हो गई।\", \"incident_date\": \"2026-10-01\", \"submitted_on\": \"2026-10-14\", \"fields\": {\"crop\": \"Wheat\", \"area_acres\": 1.0, \"loss_percent\": 80, \"survey_number\": \"42/7\"}, \"documents\": [{\"type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires_on\": null}, {\"type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires_on\": null}, {\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "crop_loss_claim"
+    },
+    "output": "{\"title\": \"Crop Loss Compensation Claim\", \"required_fields\": [\"crop\", \"area_acres\", \"loss_percent\", \"survey_number\"], \"required_documents\": [{\"type\": \"land_record\", \"label\": \"Land record (RTC / 7-12 extract)\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"crop_loss_photo\", \"label\": \"Geo-tagged photo of the damaged crop\"}], \"claim_window_days\": 7, \"rules\": [\"Claim must be filed within 7 days of the loss event.\", \"Name on land record, bank passbook and Aadhaar must match the applicant.\", \"Loss below 33% is not eligible fo…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002"
+    },
+    "output": "{\"rule\": \"7 days from incident\", \"days_elapsed\": 13, \"within_limit\": false}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "land_record"
+    },
+    "output": "{\"doc_type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "crop_loss_photo"
+    },
+    "output": "{\"doc_type\": \"crop_loss_photo\", \"present\": true, \"name_on_doc\": null, \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1002 (Sita Devi, crop loss claim) fails the 7-day filing window: submitted 13 days after the 2026-10-01 incident. All documents and fields are complete, so the applicant cannot fix this by sending more paperwork. Escalating for officer decision on whether any exception applies.",
+     "missing_items": [],
+     "risks": [
+      {
+       "issue": "Claim filed outside the 7-day window required by the scheme",
+       "evidence": "check_deadline: rule '7 days from incident', days_elapsed: 13, within_limit: false (incident_date 2026-10-01, submitted_on 2026-10-14)"
+      },
+      {
+       "issue": "Filing deadline cannot be corrected by the applicant; the decision depends on whether the officer can accept a late claim (e.g. flood-related exception, not stated in scheme rules)",
+       "evidence": "Scheme rule: 'Claim must be filed within 7 days of the loss event.' Applicant note: 'मेरी फसल बाढ़ में बर्बाद हो गई।' (my crop was destroyed in floods)"
+      }
+     ],
+     "recommended_action": "escalate",
+     "reason": "The claim was submitted 13 days after the loss event, and the scheme requires filing within 7 days. The applicant cannot fix this with documents. The scheme rules give no exception, and the applicant's note says the loss was due to flooding, so an officer should decide whether a late-filing exception applies. Other checks passed: land record, passbook and Aadhaar all show \"Sita Devi\" with no issues; the crop loss photo is present; loss is 80% (above the 33% minimum); crop, area, loss percent and survey number are filled in. The geo-tag on the photo was not verified by any tool.",
+     "message_to_applicant": "नमस्ते सीता देवी जी, आपका फसल नुकसान दावा अधिकारी की जांच के लिए भेजा गया है। आपके दस्तावेज़ सही हैं, लेकिन दावा नुकसान की तारीख से 7 दिन के भीतर दर्ज होना चाहिए था, और आपका दावा 13 दिन बाद दर्ज हुआ है। अधिकारी देखेंगे कि क्या बाढ़ के कारण कोई छूट लागू हो सकती है। कृपया अपना फ़ोन नंबर उपलब्ध रखें, ताकि अधिकारी आपसे संपर्क कर सकें।",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1003",
+  "lang": "en",
+  "triage": {
+   "summary": "C-1003 (Arjun Rao, B.Sc. Physics, Post-Matric Scholarship) is within the deadline and income is under the limit, but it cannot be approved yet. The income certificate expired before submission and the last qualifying marksheet is missing.",
+   "missing_items": [
+    {
+     "item": "Valid income certificate (issued within the last 12 months)",
+     "why": "The attached income certificate expired on 2026-06-30, before the submission date of 2026-10-20. The scheme requires a certificate that is not expired on the submission date."
+    },
+    {
+     "item": "Last qualifying marksheet",
+     "why": "Required document is not attached (validate_document: present false, 'marksheet not attached')."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "Income certificate expired before submission",
+     "evidence": "income_certificate: expires_on 2026-06-30; issue 'expired: Expired on 2026-06-30, submitted 2026-10-20'"
+    },
+    {
+     "issue": "Required marksheet missing",
+     "evidence": "marksheet: present false, issue 'missing: marksheet not attached'"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "Two required items are not met: the income certificate expired on 2026-06-30 (submission 2026-10-20), and the marksheet is absent. Both can be fixed by the applicant, so request_more_info is preferred over reject. Deadline (within 2026-10-31) is met, Aadhaar, bank passbook and admission letter are valid with matching names, and the declared income of 180000 is under the 250000 cap.",
+   "message_to_applicant": "Hello Arjun, thank you for applying for the Post-Matric Scholarship. To continue, please send us: 1) A new income certificate that is still valid (the one you sent expired on 30 June 2026). 2) Your last qualifying marksheet. Once we have these, we will review your application again.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003"
+    },
+    "output": "{\"id\": \"C-1003\", \"scheme_id\": \"scholarship_post_matric\", \"applicant\": {\"name\": \"Arjun Rao\", \"language\": \"en\", \"village\": \"Mysuru\"}, \"applicant_note\": \"Applying for the first-year B.Sc. scholarship.\", \"incident_date\": null, \"submitted_on\": \"2026-10-20\", \"fields\": {\"course\": \"B.Sc. Physics\", \"annual_income\": 180000, \"institution\": \"Govt. First Grade College\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"expires_on\": null}, {\"type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"expires_on\": \"2026-06-30\"}, {\"type\": \"bank_passbook\", \"present…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "scholarship_post_matric"
+    },
+    "output": "{\"title\": \"Post-Matric Scholarship\", \"required_fields\": [\"course\", \"annual_income\", \"institution\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"income_certificate\", \"label\": \"Income certificate (valid for 12 months from issue)\"}, {\"type\": \"marksheet\", \"label\": \"Last qualifying marksheet\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"admission_letter\", \"label\": \"Admission letter / bonafide certificate\"}], \"deadline\": \"2026-10-31\", \"rules\": [\"Application must be submitted on or before 31 Oct 2026.\", \"Income certificate must not be …",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003"
+    },
+    "output": "{\"rule\": \"deadline 2026-10-31\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "income_certificate"
+    },
+    "output": "{\"doc_type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": [{\"code\": \"expired\", \"detail\": \"Expired on 2026-06-30, submitted 2026-10-20\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "admission_letter"
+    },
+    "output": "{\"doc_type\": \"admission_letter\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "marksheet"
+    },
+    "output": "{\"doc_type\": \"marksheet\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"marksheet not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1003 (Arjun Rao, B.Sc. Physics, Post-Matric Scholarship) is within the deadline and income is under the limit, but it cannot be approved yet. The income certificate expired before submission and the last qualifying marksheet is missing.",
+     "missing_items": [
+      {
+       "item": "Valid income certificate (issued within the last 12 months)",
+       "why": "The attached income certificate expired on 2026-06-30, before the submission date of 2026-10-20. The scheme requires a certificate that is not expired on the submission date."
+      },
+      {
+       "item": "Last qualifying marksheet",
+       "why": "Required document is not attached (validate_document: present false, 'marksheet not attached')."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "Income certificate expired before submission",
+       "evidence": "income_certificate: expires_on 2026-06-30; issue 'expired: Expired on 2026-06-30, submitted 2026-10-20'"
+      },
+      {
+       "issue": "Required marksheet missing",
+       "evidence": "marksheet: present false, issue 'missing: marksheet not attached'"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "Two required items are not met: the income certificate expired on 2026-06-30 (submission 2026-10-20), and the marksheet is absent. Both can be fixed by the applicant, so request_more_info is preferred over reject. Deadline (within 2026-10-31) is met, Aadhaar, bank passbook and admission letter are valid with matching names, and the declared income of 180000 is under the 250000 cap.",
+     "message_to_applicant": "Hello Arjun, thank you for applying for the Post-Matric Scholarship. To continue, please send us: 1) A new income certificate that is still valid (the one you sent expired on 30 June 2026). 2) Your last qualifying marksheet. Once we have these, we will review your application again.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1004",
+  "lang": "en",
+  "triage": {
+   "summary": "C-1004 (Post-Matric Scholarship, Kavya Shetty): all required fields and five documents are present and name-matched, submitted within the 31 Oct 2026 deadline, income ₹120,000 is under the ₹250,000 cap, and the income certificate is not expired. Recommend approve for officer review.",
+   "missing_items": [],
+   "risks": [],
+   "recommended_action": "approve",
+   "reason": "Checks against scheme_post_matric rules: (1) Required fields course, annual_income, institution are all filled (B.Com, 120000, Govt. First Grade College). (2) All five required documents (aadhaar, income_certificate, marksheet, bank_passbook, admission_letter) are present, name_on_doc matches \"Kavya Shetty\", and validate_document reported no issues. (3) check_deadline: within_limit true against the 2026-10-31 deadline (submitted 2026-10-22). (4) Income certificate expires_on 2027-03-31, so it is not expired on the submission date. The scheme's \"valid for 12 months from issue\" rule cannot be verified directly because no issue date is in the file; the 2027-03-31 expiry is consistent with a March 2026 issue, which would be within 12 months of submission. (5) Annual income 120000 is below the 250000 INR cap. Officer may wish to confirm the certificate issue date on the physical copy as a routine check. Applicant language is Kannada, so the message is in Kannada.",
+   "message_to_applicant": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಶೆಟ್ಟಿ ಅವರೇ, ನಿಮ್ಮ ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಜಿಯನ್ನು ಸ್ವೀಕರಿಸಲಾಗಿದೆ. ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳು ಮತ್ತು ಮಾಹಿತಿ ಸರಿಯಾಗಿವೆ. ನೀವು ಹೆಚ್ಚುವರಿ ಯಾವುದೇ ದಾಖಲೆ ಕಳುಹಿಸಬೇಕಾಗಿಲ್ಲ. ಅಧಿಕಾರಿಗಳು ಅರ್ಜಿಯನ್ನು ಪರಿಶೀಲಿಸಿದ ನಂತರ ನಿಮಗೆ ತಿಳಿಸಲಾಗುವುದು. ಧನ್ಯವಾದಗಳು.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004"
+    },
+    "output": "{\"id\": \"C-1004\", \"scheme_id\": \"scholarship_post_matric\", \"applicant\": {\"name\": \"Kavya Shetty\", \"language\": \"kn\", \"village\": \"Udupi\"}, \"applicant_note\": \"ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ.\", \"incident_date\": null, \"submitted_on\": \"2026-10-22\", \"fields\": {\"course\": \"B.Com\", \"annual_income\": 120000, \"institution\": \"Govt. First Grade College\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"expires_on\": null}, {\"type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"expires_on\": \"2027-03-31\"}, {\"type\": \"marksheet\", \"present\": true, \"name…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "scholarship_post_matric"
+    },
+    "output": "{\"title\": \"Post-Matric Scholarship\", \"required_fields\": [\"course\", \"annual_income\", \"institution\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"income_certificate\", \"label\": \"Income certificate (valid for 12 months from issue)\"}, {\"type\": \"marksheet\", \"label\": \"Last qualifying marksheet\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"admission_letter\", \"label\": \"Admission letter / bonafide certificate\"}], \"deadline\": \"2026-10-31\", \"rules\": [\"Application must be submitted on or before 31 Oct 2026.\", \"Income certificate must not be …",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004"
+    },
+    "output": "{\"rule\": \"deadline 2026-10-31\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "income_certificate"
+    },
+    "output": "{\"doc_type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "marksheet"
+    },
+    "output": "{\"doc_type\": \"marksheet\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "admission_letter"
+    },
+    "output": "{\"doc_type\": \"admission_letter\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1004 (Post-Matric Scholarship, Kavya Shetty): all required fields and five documents are present and name-matched, submitted within the 31 Oct 2026 deadline, income ₹120,000 is under the ₹250,000 cap, and the income certificate is not expired. Recommend approve for officer review.",
+     "missing_items": [],
+     "risks": [],
+     "recommended_action": "approve",
+     "reason": "Checks against scheme_post_matric rules: (1) Required fields course, annual_income, institution are all filled (B.Com, 120000, Govt. First Grade College). (2) All five required documents (aadhaar, income_certificate, marksheet, bank_passbook, admission_letter) are present, name_on_doc matches \"Kavya Shetty\", and validate_document reported no issues. (3) check_deadline: within_limit true against the 2026-10-31 deadline (submitted 2026-10-22). (4) Income certificate expires_on 2027-03-31, so it is not expired on the submission date. The scheme's \"valid for 12 months from issue\" rule cannot be verified directly because no issue date is in the file; the 2027-03-31 expiry is consistent with a March 2026 issue, which would be within 12 months of submission. (5) Annual income 120000 is below the 250000 INR cap. Officer may wish to confirm the certificate issue date on the physical copy as a routine check. Applicant language is Kannada, so the message is in Kannada.",
+     "message_to_applicant": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಶೆಟ್ಟಿ ಅವರೇ, ನಿಮ್ಮ ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಜಿಯನ್ನು ಸ್ವೀಕರಿಸಲಾಗಿದೆ. ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳು ಮತ್ತು ಮಾಹಿತಿ ಸರಿಯಾಗಿವೆ. ನೀವು ಹೆಚ್ಚುವರಿ ಯಾವುದೇ ದಾಖಲೆ ಕಳುಹಿಸಬೇಕಾಗಿಲ್ಲ. ಅಧಿಕಾರಿಗಳು ಅರ್ಜಿಯನ್ನು ಪರಿಶೀಲಿಸಿದ ನಂತರ ನಿಮಗೆ ತಿಳಿಸಲಾಗುವುದು. ಧನ್ಯವಾದಗಳು.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1005",
+  "lang": "en",
+  "triage": {
+   "summary": "C-1005 (ration card add_member, Barabanki) is incomplete: the address proof is in a different name from the applicant. Aadhaar and existing ration card are valid, and there is no deadline. Recommend request_more_info.",
+   "missing_items": [
+    {
+     "item": "Address proof in the applicant's name (Sunita Devi), or a name-change document linking 'Sunita Kumari' to 'Sunita Devi'",
+     "why": "Scheme rule: name on address proof must match the head of household on Aadhaar. The address proof shows 'Sunita Kumari', while Aadhaar and the applicant show 'Sunita Devi'."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "Name mismatch on address proof, violating a scheme rule",
+     "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch)"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "The scheme requires the name on the address proof to match the head of household on Aadhaar. The address proof is in the name 'Sunita Kumari' while Aadhaar and the applicant are 'Sunita Devi'. The applicant can fix this by providing an address proof in her name or a name-change document, so request_more_info fits better than reject. Aadhaar and the existing ration card validated with no issues, and there is no time limit. The case file does not explicitly confirm that the applicant is the head of household, so the officer may want to check that too. The request has no incident date, which is expected since none is required.",
+   "message_to_applicant": "नमस्ते Sunita Devi जी, आपके आवेदन में पता प्रमाण (address proof) पर नाम \"Sunita Kumari\" लिखा है, जबकि आधार कार्ड पर नाम \"Sunita Devi\" है। कृपया ऐसा पता प्रमाण लाएं जिस पर आपका नाम \"Sunita Devi\" लिखा हो। यदि आपका नाम बदला है (जैसे शादी के बाद), तो उसका कोई प्रमाण पत्र भी साथ लाएं। आपका आधार कार्ड और पुराना राशन कार्ड सही है।",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005"
+    },
+    "output": "{\"id\": \"C-1005\", \"scheme_id\": \"ration_card_update\", \"applicant\": {\"name\": \"Sunita Devi\", \"language\": \"hi\", \"village\": \"Barabanki\"}, \"applicant_note\": \"परिवार में एक नया सदस्य जोड़ना है।\", \"incident_date\": null, \"submitted_on\": \"2026-10-19\", \"fields\": {\"update_type\": \"add_member\", \"household_size\": 5}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"expires_on\": null}, {\"type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Sunita Kumari\", \"expires_on\": null}, {\"type\": \"existing_ration_card\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"expires_on\": null}…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "ration_card_update"
+    },
+    "output": "{\"title\": \"Ration Card Update\", \"required_fields\": [\"update_type\", \"household_size\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card of the head of household\"}, {\"type\": \"address_proof\", \"label\": \"Address proof\"}, {\"type\": \"existing_ration_card\", \"label\": \"Existing ration card\"}], \"claim_window_days\": null, \"rules\": [\"Name on address proof must match the head of household on Aadhaar.\", \"Existing ration card copy is mandatory for any update.\"]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "address_proof"
+    },
+    "output": "{\"doc_type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Sunita Kumari\", \"issues\": [{\"code\": \"name_mismatch\", \"detail\": \"Applicant 'Sunita Devi' vs document 'Sunita Kumari'\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "existing_ration_card"
+    },
+    "output": "{\"doc_type\": \"existing_ration_card\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005"
+    },
+    "output": "{\"rule\": \"no time limit for this scheme\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1005 (ration card add_member, Barabanki) is incomplete: the address proof is in a different name from the applicant. Aadhaar and existing ration card are valid, and there is no deadline. Recommend request_more_info.",
+     "missing_items": [
+      {
+       "item": "Address proof in the applicant's name (Sunita Devi), or a name-change document linking 'Sunita Kumari' to 'Sunita Devi'",
+       "why": "Scheme rule: name on address proof must match the head of household on Aadhaar. The address proof shows 'Sunita Kumari', while Aadhaar and the applicant show 'Sunita Devi'."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "Name mismatch on address proof, violating a scheme rule",
+       "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch)"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "The scheme requires the name on the address proof to match the head of household on Aadhaar. The address proof is in the name 'Sunita Kumari' while Aadhaar and the applicant are 'Sunita Devi'. The applicant can fix this by providing an address proof in her name or a name-change document, so request_more_info fits better than reject. Aadhaar and the existing ration card validated with no issues, and there is no time limit. The case file does not explicitly confirm that the applicant is the head of household, so the officer may want to check that too. The request has no incident date, which is expected since none is required.",
+     "message_to_applicant": "नमस्ते Sunita Devi जी, आपके आवेदन में पता प्रमाण (address proof) पर नाम \"Sunita Kumari\" लिखा है, जबकि आधार कार्ड पर नाम \"Sunita Devi\" है। कृपया ऐसा पता प्रमाण लाएं जिस पर आपका नाम \"Sunita Devi\" लिखा हो। यदि आपका नाम बदला है (जैसे शादी के बाद), तो उसका कोई प्रमाण पत्र भी साथ लाएं। आपका आधार कार्ड और पुराना राशन कार्ड सही है।",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1006",
+  "lang": "en",
+  "triage": {
+   "summary": "C-1006 (ration card address change) is incomplete. The existing ration card copy, which the scheme requires for any update, is not attached, and the required household_size field is missing. Request more info; the case is otherwise in order.",
+   "missing_items": [
+    {
+     "item": "Existing ration card copy",
+     "why": "Scheme rule: 'Existing ration card copy is mandatory for any update.' validate_document returned present: false, 'existing_ration_card not attached'."
+    },
+    {
+     "item": "household_size field",
+     "why": "Required field per scheme requirements. The case fields only contain update_type = address_change; household_size is absent."
+    }
+   ],
+   "risks": [
+    {
+     "issue": "Mandatory existing ration card document not attached",
+     "evidence": "validate_document(existing_ration_card): present: false, issues: [{code: missing, detail: 'existing_ration_card not attached'}]"
+    },
+    {
+     "issue": "Required field household_size missing from the form",
+     "evidence": "fields: {update_type: 'address_change'}; scheme required_fields: ['update_type', 'household_size']"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "The Aadhaar card and address proof are present, the names match ('Mohammed Irfan'), and the submission is within the scheme's no-deadline rule. However, the existing ration card copy is missing and is mandatory for any update, and the household_size field is not filled in. The applicant can fix both, so request_more_info is preferred over reject.",
+   "message_to_applicant": "Hello Mohammed Irfan, thank you for your change of address request. To continue, please send us: 1) a copy of your existing ration card, and 2) the number of people in your household (household size). Your Aadhaar card and address proof are already received. Thank you.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006"
+    },
+    "output": "{\"id\": \"C-1006\", \"scheme_id\": \"ration_card_update\", \"applicant\": {\"name\": \"Mohammed Irfan\", \"language\": \"en\", \"village\": \"Bengaluru\"}, \"applicant_note\": \"Change of address after moving house.\", \"incident_date\": null, \"submitted_on\": \"2026-10-21\", \"fields\": {\"update_type\": \"address_change\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"expires_on\": null}, {\"type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"expires_on\": null}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "ration_card_update"
+    },
+    "output": "{\"title\": \"Ration Card Update\", \"required_fields\": [\"update_type\", \"household_size\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card of the head of household\"}, {\"type\": \"address_proof\", \"label\": \"Address proof\"}, {\"type\": \"existing_ration_card\", \"label\": \"Existing ration card\"}], \"claim_window_days\": null, \"rules\": [\"Name on address proof must match the head of household on Aadhaar.\", \"Existing ration card copy is mandatory for any update.\"]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006"
+    },
+    "output": "{\"rule\": \"no time limit for this scheme\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "address_proof"
+    },
+    "output": "{\"doc_type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "existing_ration_card"
+    },
+    "output": "{\"doc_type\": \"existing_ration_card\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"existing_ration_card not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1006 (ration card address change) is incomplete. The existing ration card copy, which the scheme requires for any update, is not attached, and the required household_size field is missing. Request more info; the case is otherwise in order.",
+     "missing_items": [
+      {
+       "item": "Existing ration card copy",
+       "why": "Scheme rule: 'Existing ration card copy is mandatory for any update.' validate_document returned present: false, 'existing_ration_card not attached'."
+      },
+      {
+       "item": "household_size field",
+       "why": "Required field per scheme requirements. The case fields only contain update_type = address_change; household_size is absent."
+      }
+     ],
+     "risks": [
+      {
+       "issue": "Mandatory existing ration card document not attached",
+       "evidence": "validate_document(existing_ration_card): present: false, issues: [{code: missing, detail: 'existing_ration_card not attached'}]"
+      },
+      {
+       "issue": "Required field household_size missing from the form",
+       "evidence": "fields: {update_type: 'address_change'}; scheme required_fields: ['update_type', 'household_size']"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "The Aadhaar card and address proof are present, the names match ('Mohammed Irfan'), and the submission is within the scheme's no-deadline rule. However, the existing ration card copy is missing and is mandatory for any update, and the household_size field is not filled in. The applicant can fix both, so request_more_info is preferred over reject.",
+     "message_to_applicant": "Hello Mohammed Irfan, thank you for your change of address request. To continue, please send us: 1) a copy of your existing ration card, and 2) the number of people in your household (household size). Your Aadhaar card and address proof are already received. Thank you.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1001",
+  "lang": "hi",
+  "triage": {
+   "summary": "C-1001 (फसल हानि दावा, रमेश गौड़ा): आवश्यक जियो-टैग्ड फ़ोटो संलग्न नहीं है और बैंक पासबुक पर नाम अधूरा है। समय-सीमा और नुकसान प्रतिशत के नियम पूरे होते हैं। अनुरोध: अतिरिक्त जानकारी मांगें।",
+   "missing_items": [
+    {
+     "item": "नुकसान की जियो-टैग्ड फ़ोटो (crop_loss_photo)",
+     "why": "योजना में यह अनिवार्य दस्तावेज़ है, लेकिन केस में 'crop_loss_photo not attached' दर्ज है।"
+    },
+    {
+     "item": "बैंक पासबुक के पहले पन्ने पर पूरा नाम या बैंक से नाम की पुष्टि",
+     "why": "पासबुक पर नाम 'Ramesh G' है, जबकि आवेदक का नाम 'Ramesh Gowda' है। नियम के अनुसार नाम पूरी तरह मेल खाना चाहिए।"
+    }
+   ],
+   "risks": [
+    {
+     "issue": "आवश्यक जियो-टैग्ड फ़ोटो नहीं है",
+     "evidence": "crop_loss_photo not attached (code: missing)"
+    },
+    {
+     "issue": "बैंक पासबुक पर नाम आवेदक के नाम से आंशिक रूप से मेल खाता है",
+     "evidence": "Applicant 'Ramesh Gowda' vs document 'Ramesh G' (code: name_partial_match)"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "योजना crop_loss_claim की जाँच: दावा 7 दिन की सीमा के भीतर है (days_elapsed: 6, within_limit: true)। नुकसान 60% है, जो 33% की न्यूनतम सीमा से ऊपर है। भूमि अभिलेख और आधार पर नाम 'Ramesh Gowda' से मेल खाते हैं। लेकिन जियो-टैग्ड फ़ोटो गायब है और बैंक पासबुक पर नाम 'Ramesh G' है। ये दोनों आवेदक द्वारा ठीक किए जा सकते हैं, इसलिए अस्वीकार करने के बजाय अतिरिक्त जानकारी मांगना उचित है।",
+   "message_to_applicant": "ನಮಸ್ಕಾರ ರಮೇಶ್ ಗೌಡ ಅವರೇ, ನಿಮ್ಮ ಬೆಳೆ ಹಾನಿ ಕ್ಲೇಮ್ ಅನ್ನು ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಸಲ್ಲಿಸಿ: (1) ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಜಿಯೋ-ಟ್ಯಾಗ್ ಇರುವ ಫೋಟೋ. (2) ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಮೊದಲ ಪುಟ, ಅದರಲ್ಲಿ ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರು 'ರಮೇಶ್ ಗೌಡ' ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣಿಸಬೇಕು. ಧನ್ಯವಾದಗಳು.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001"
+    },
+    "output": "{\"id\": \"C-1001\", \"scheme_id\": \"crop_loss_claim\", \"applicant\": {\"name\": \"Ramesh Gowda\", \"language\": \"kn\", \"village\": \"Hosahalli\"}, \"applicant_note\": \"ನನ್ನ ಬೆಳೆ ಮಳೆಯಿಂದ ಹಾನಿಯಾಗಿದೆ.\", \"incident_date\": \"2026-10-12\", \"submitted_on\": \"2026-10-18\", \"fields\": {\"crop\": \"Ragi\", \"area_acres\": 2.5, \"loss_percent\": 60, \"survey_number\": \"118/2\"}, \"documents\": [{\"type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"expires_on\": null}, {\"type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Ramesh G\", \"expires_on\": null}, {\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\",…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "crop_loss_claim"
+    },
+    "output": "{\"title\": \"Crop Loss Compensation Claim\", \"required_fields\": [\"crop\", \"area_acres\", \"loss_percent\", \"survey_number\"], \"required_documents\": [{\"type\": \"land_record\", \"label\": \"Land record (RTC / 7-12 extract)\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"crop_loss_photo\", \"label\": \"Geo-tagged photo of the damaged crop\"}], \"claim_window_days\": 7, \"rules\": [\"Claim must be filed within 7 days of the loss event.\", \"Name on land record, bank passbook and Aadhaar must match the applicant.\", \"Loss below 33% is not eligible fo…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001"
+    },
+    "output": "{\"rule\": \"7 days from incident\", \"days_elapsed\": 6, \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "land_record"
+    },
+    "output": "{\"doc_type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Ramesh G\", \"issues\": [{\"code\": \"name_partial_match\", \"detail\": \"Applicant 'Ramesh Gowda' vs document 'Ramesh G'\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Ramesh Gowda\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1001",
+     "doc_type": "crop_loss_photo"
+    },
+    "output": "{\"doc_type\": \"crop_loss_photo\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"crop_loss_photo not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1001 (फसल हानि दावा, रमेश गौड़ा): आवश्यक जियो-टैग्ड फ़ोटो संलग्न नहीं है और बैंक पासबुक पर नाम अधूरा है। समय-सीमा और नुकसान प्रतिशत के नियम पूरे होते हैं। अनुरोध: अतिरिक्त जानकारी मांगें।",
+     "missing_items": [
+      {
+       "item": "नुकसान की जियो-टैग्ड फ़ोटो (crop_loss_photo)",
+       "why": "योजना में यह अनिवार्य दस्तावेज़ है, लेकिन केस में 'crop_loss_photo not attached' दर्ज है।"
+      },
+      {
+       "item": "बैंक पासबुक के पहले पन्ने पर पूरा नाम या बैंक से नाम की पुष्टि",
+       "why": "पासबुक पर नाम 'Ramesh G' है, जबकि आवेदक का नाम 'Ramesh Gowda' है। नियम के अनुसार नाम पूरी तरह मेल खाना चाहिए।"
+      }
+     ],
+     "risks": [
+      {
+       "issue": "आवश्यक जियो-टैग्ड फ़ोटो नहीं है",
+       "evidence": "crop_loss_photo not attached (code: missing)"
+      },
+      {
+       "issue": "बैंक पासबुक पर नाम आवेदक के नाम से आंशिक रूप से मेल खाता है",
+       "evidence": "Applicant 'Ramesh Gowda' vs document 'Ramesh G' (code: name_partial_match)"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "योजना crop_loss_claim की जाँच: दावा 7 दिन की सीमा के भीतर है (days_elapsed: 6, within_limit: true)। नुकसान 60% है, जो 33% की न्यूनतम सीमा से ऊपर है। भूमि अभिलेख और आधार पर नाम 'Ramesh Gowda' से मेल खाते हैं। लेकिन जियो-टैग्ड फ़ोटो गायब है और बैंक पासबुक पर नाम 'Ramesh G' है। ये दोनों आवेदक द्वारा ठीक किए जा सकते हैं, इसलिए अस्वीकार करने के बजाय अतिरिक्त जानकारी मांगना उचित है।",
+     "message_to_applicant": "ನಮಸ್ಕಾರ ರಮೇಶ್ ಗೌಡ ಅವರೇ, ನಿಮ್ಮ ಬೆಳೆ ಹಾನಿ ಕ್ಲೇಮ್ ಅನ್ನು ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಸಲ್ಲಿಸಿ: (1) ಹಾನಿಗೊಳಗಾದ ಬೆಳೆಯ ಜಿಯೋ-ಟ್ಯಾಗ್ ಇರುವ ಫೋಟೋ. (2) ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್‌ನ ಮೊದಲ ಪುಟ, ಅದರಲ್ಲಿ ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರು 'ರಮೇಶ್ ಗೌಡ' ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣಿಸಬೇಕು. ಧನ್ಯವಾದಗಳು.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1002",
+  "lang": "hi",
+  "triage": {
+   "summary": "C-1002 (सीता देवी, फसल बीमा दावा): सभी दस्तावेज़ मौजूद हैं और नाम मेल खाते हैं, लेकिन आवेदन निर्धारित 7 दिन की सीमा के बाद दर्ज हुआ है (13 दिन), इसलिए अस्वीकार करने की सिफारिश है। अंतिम निर्णय अधिकारी का होगा।",
+   "missing_items": [],
+   "risks": [
+    {
+     "issue": "दावा निर्धारित समय सीमा के बाद दर्ज हुआ है। नियम के अनुसार दावा घटना के 7 दिन के भीतर दर्ज होना चाहिए।",
+     "evidence": "days_elapsed: 13, within_limit: false (rule: 7 days from incident); incident_date 2026-10-01, submitted_on 2026-10-14"
+    }
+   ],
+   "recommended_action": "reject",
+   "reason": "योजना का नियम है कि दावा घटना के 7 दिन के भीतर दर्ज होना चाहिए। यह आवेदन 13 दिन बाद दर्ज हुआ, इसलिए समय सीमा की शर्त पूरी नहीं होती। आवेदक इसे ठीक नहीं कर सकती, इसलिए request_more_info उचित नहीं है। बाकी जाँच ठीक है: भूमि अभिलेख, बैंक पासबुक और आधार पर नाम \"Sita Devi\" है और मेल खाता है; फसल क्षति 80% है (न्यूनतम 33%); क्षेत्र 1.0 एकड़ और सभी आवश्यक फ़ील्ड भरे हैं; फसल क्षति की फ़ोटो मौजूद है। अधिकारी यह देख लें कि योजना में देर से दर्ज आवेदनों के लिए कोई अपवाद प्रक्रिया है या नहीं। ऐसा कोई नियम टूल परिणामों में नहीं दिखा।",
+   "message_to_applicant": "नमस्ते सीता देवी जी, आपका फसल नुकसान दावा (केस C-1002) योजना की समय सीमा के बाद दर्ज हुआ है। योजना के अनुसार दावा नुकसान के 7 दिन के भीतर दर्ज होना चाहिए। आपके दस्तावेज़ सही हैं, लेकिन समय सीमा पूरी न होने के कारण यह दावा स्वीकार नहीं किया जा सकता। अधिक जानकारी के लिए कृपया अपने स्थानीय कार्यालय से संपर्क करें।",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002"
+    },
+    "output": "{\"id\": \"C-1002\", \"scheme_id\": \"crop_loss_claim\", \"applicant\": {\"name\": \"Sita Devi\", \"language\": \"hi\", \"village\": \"Rampur\"}, \"applicant_note\": \"मेरी फसल बाढ़ में बर्बाद हो गई।\", \"incident_date\": \"2026-10-01\", \"submitted_on\": \"2026-10-14\", \"fields\": {\"crop\": \"Wheat\", \"area_acres\": 1.0, \"loss_percent\": 80, \"survey_number\": \"42/7\"}, \"documents\": [{\"type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires_on\": null}, {\"type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires_on\": null}, {\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"expires…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "crop_loss_claim"
+    },
+    "output": "{\"title\": \"Crop Loss Compensation Claim\", \"required_fields\": [\"crop\", \"area_acres\", \"loss_percent\", \"survey_number\"], \"required_documents\": [{\"type\": \"land_record\", \"label\": \"Land record (RTC / 7-12 extract)\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"crop_loss_photo\", \"label\": \"Geo-tagged photo of the damaged crop\"}], \"claim_window_days\": 7, \"rules\": [\"Claim must be filed within 7 days of the loss event.\", \"Name on land record, bank passbook and Aadhaar must match the applicant.\", \"Loss below 33% is not eligible fo…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002"
+    },
+    "output": "{\"rule\": \"7 days from incident\", \"days_elapsed\": 13, \"within_limit\": false}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "land_record"
+    },
+    "output": "{\"doc_type\": \"land_record\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1002",
+     "doc_type": "crop_loss_photo"
+    },
+    "output": "{\"doc_type\": \"crop_loss_photo\", \"present\": true, \"name_on_doc\": null, \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1002 (सीता देवी, फसल बीमा दावा): सभी दस्तावेज़ मौजूद हैं और नाम मेल खाते हैं, लेकिन आवेदन निर्धारित 7 दिन की सीमा के बाद दर्ज हुआ है (13 दिन), इसलिए अस्वीकार करने की सिफारिश है। अंतिम निर्णय अधिकारी का होगा।",
+     "missing_items": [],
+     "risks": [
+      {
+       "issue": "दावा निर्धारित समय सीमा के बाद दर्ज हुआ है। नियम के अनुसार दावा घटना के 7 दिन के भीतर दर्ज होना चाहिए।",
+       "evidence": "days_elapsed: 13, within_limit: false (rule: 7 days from incident); incident_date 2026-10-01, submitted_on 2026-10-14"
+      }
+     ],
+     "recommended_action": "reject",
+     "reason": "योजना का नियम है कि दावा घटना के 7 दिन के भीतर दर्ज होना चाहिए। यह आवेदन 13 दिन बाद दर्ज हुआ, इसलिए समय सीमा की शर्त पूरी नहीं होती। आवेदक इसे ठीक नहीं कर सकती, इसलिए request_more_info उचित नहीं है। बाकी जाँच ठीक है: भूमि अभिलेख, बैंक पासबुक और आधार पर नाम \"Sita Devi\" है और मेल खाता है; फसल क्षति 80% है (न्यूनतम 33%); क्षेत्र 1.0 एकड़ और सभी आवश्यक फ़ील्ड भरे हैं; फसल क्षति की फ़ोटो मौजूद है। अधिकारी यह देख लें कि योजना में देर से दर्ज आवेदनों के लिए कोई अपवाद प्रक्रिया है या नहीं। ऐसा कोई नियम टूल परिणामों में नहीं दिखा।",
+     "message_to_applicant": "नमस्ते सीता देवी जी, आपका फसल नुकसान दावा (केस C-1002) योजना की समय सीमा के बाद दर्ज हुआ है। योजना के अनुसार दावा नुकसान के 7 दिन के भीतर दर्ज होना चाहिए। आपके दस्तावेज़ सही हैं, लेकिन समय सीमा पूरी न होने के कारण यह दावा स्वीकार नहीं किया जा सकता। अधिक जानकारी के लिए कृपया अपने स्थानीय कार्यालय से संपर्क करें।",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1003",
+  "lang": "hi",
+  "triage": {
+   "summary": "C-1003 (Arjun Rao, Post-Matric छात्रवृत्ति) में दो आवश्यक दस्तावेज़ों की कमी/समस्या है: आय प्रमाण पत्र की वैधता 2026-06-30 को समाप्त हो चुकी है और अंकतालिका (marksheet) संलग्न नहीं है। आवेदन की समय-सीमा और आय सीमा ठीक हैं। आवेदक से दस्तावेज़ मंगवाने की सिफ़ारिश है।",
+   "missing_items": [
+    {
+     "item": "नया आय प्रमाण पत्र (income certificate), जो आवेदन की तारीख पर वैध हो",
+     "why": "मौजूदा आय प्रमाण पत्र 2026-06-30 को समाप्त हो गया है, जबकि आवेदन 2026-10-20 को जमा हुआ। नियम के अनुसार आय प्रमाण पत्र जमा करने की तारीख पर वैध होना चाहिए।"
+    },
+    {
+     "item": "अंतिम योग्यता परीक्षा की अंकतालिका (Last qualifying marksheet)",
+     "why": "यह योजना की अनिवार्य दस्तावेज़ सूची में है, लेकिन केस फ़ाइल में संलग्न नहीं है (validate_document: present false, code 'missing')।"
+    }
+   ],
+   "risks": [
+    {
+     "issue": "आय प्रमाण पत्र की वैधता समाप्त है",
+     "evidence": "Expired on 2026-06-30, submitted 2026-10-20"
+    },
+    {
+     "issue": "अनिवार्य दस्तावेज़ (अंकतालिका) संलग्न नहीं है",
+     "evidence": "marksheet not attached (present: false, code: missing)"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "आवेदक ठीक करने योग्य समस्याओं के कारण रिजेक्ट करने के बजाय अतिरिक्त जानकारी मांगना उचित है। आवेदन की समय-सीमा (2026-10-31 तक) के भीतर जमा हुआ है और वार्षिक पारिवारिक आय 180000 INR, जो 250000 INR की सीमा के भीतर है। आधार, बैंक पासबुक और प्रवेश पत्र सत्यापित हैं और नाम \"Arjun Rao\" से मेल खाते हैं। आय प्रमाण पत्र समाप्त है और अंकतालिका नहीं है, इसलिए स्वीकृति की सिफ़ारिश नहीं की जा सकती।",
+   "message_to_applicant": "Dear Arjun Rao, thank you for your scholarship application. To continue, please bring or upload the following: 1) A new income certificate. Your current one expired on 30 June 2026, and it must be valid on the date you submitted (20 October 2026). 2) Your last qualifying marksheet, which was not attached with your application. Once we receive these, we will continue processing your application. Thank you.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003"
+    },
+    "output": "{\"id\": \"C-1003\", \"scheme_id\": \"scholarship_post_matric\", \"applicant\": {\"name\": \"Arjun Rao\", \"language\": \"en\", \"village\": \"Mysuru\"}, \"applicant_note\": \"Applying for the first-year B.Sc. scholarship.\", \"incident_date\": null, \"submitted_on\": \"2026-10-20\", \"fields\": {\"course\": \"B.Sc. Physics\", \"annual_income\": 180000, \"institution\": \"Govt. First Grade College\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"expires_on\": null}, {\"type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"expires_on\": \"2026-06-30\"}, {\"type\": \"bank_passbook\", \"present…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "scholarship_post_matric"
+    },
+    "output": "{\"title\": \"Post-Matric Scholarship\", \"required_fields\": [\"course\", \"annual_income\", \"institution\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"income_certificate\", \"label\": \"Income certificate (valid for 12 months from issue)\"}, {\"type\": \"marksheet\", \"label\": \"Last qualifying marksheet\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"admission_letter\", \"label\": \"Admission letter / bonafide certificate\"}], \"deadline\": \"2026-10-31\", \"rules\": [\"Application must be submitted on or before 31 Oct 2026.\", \"Income certificate must not be …",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003"
+    },
+    "output": "{\"rule\": \"deadline 2026-10-31\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "income_certificate"
+    },
+    "output": "{\"doc_type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": [{\"code\": \"expired\", \"detail\": \"Expired on 2026-06-30, submitted 2026-10-20\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "admission_letter"
+    },
+    "output": "{\"doc_type\": \"admission_letter\", \"present\": true, \"name_on_doc\": \"Arjun Rao\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1003",
+     "doc_type": "marksheet"
+    },
+    "output": "{\"doc_type\": \"marksheet\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"marksheet not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1003 (Arjun Rao, Post-Matric छात्रवृत्ति) में दो आवश्यक दस्तावेज़ों की कमी/समस्या है: आय प्रमाण पत्र की वैधता 2026-06-30 को समाप्त हो चुकी है और अंकतालिका (marksheet) संलग्न नहीं है। आवेदन की समय-सीमा और आय सीमा ठीक हैं। आवेदक से दस्तावेज़ मंगवाने की सिफ़ारिश है।",
+     "missing_items": [
+      {
+       "item": "नया आय प्रमाण पत्र (income certificate), जो आवेदन की तारीख पर वैध हो",
+       "why": "मौजूदा आय प्रमाण पत्र 2026-06-30 को समाप्त हो गया है, जबकि आवेदन 2026-10-20 को जमा हुआ। नियम के अनुसार आय प्रमाण पत्र जमा करने की तारीख पर वैध होना चाहिए।"
+      },
+      {
+       "item": "अंतिम योग्यता परीक्षा की अंकतालिका (Last qualifying marksheet)",
+       "why": "यह योजना की अनिवार्य दस्तावेज़ सूची में है, लेकिन केस फ़ाइल में संलग्न नहीं है (validate_document: present false, code 'missing')।"
+      }
+     ],
+     "risks": [
+      {
+       "issue": "आय प्रमाण पत्र की वैधता समाप्त है",
+       "evidence": "Expired on 2026-06-30, submitted 2026-10-20"
+      },
+      {
+       "issue": "अनिवार्य दस्तावेज़ (अंकतालिका) संलग्न नहीं है",
+       "evidence": "marksheet not attached (present: false, code: missing)"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "आवेदक ठीक करने योग्य समस्याओं के कारण रिजेक्ट करने के बजाय अतिरिक्त जानकारी मांगना उचित है। आवेदन की समय-सीमा (2026-10-31 तक) के भीतर जमा हुआ है और वार्षिक पारिवारिक आय 180000 INR, जो 250000 INR की सीमा के भीतर है। आधार, बैंक पासबुक और प्रवेश पत्र सत्यापित हैं और नाम \"Arjun Rao\" से मेल खाते हैं। आय प्रमाण पत्र समाप्त है और अंकतालिका नहीं है, इसलिए स्वीकृति की सिफ़ारिश नहीं की जा सकती।",
+     "message_to_applicant": "Dear Arjun Rao, thank you for your scholarship application. To continue, please bring or upload the following: 1) A new income certificate. Your current one expired on 30 June 2026, and it must be valid on the date you submitted (20 October 2026). 2) Your last qualifying marksheet, which was not attached with your application. Once we receive these, we will continue processing your application. Thank you.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1004",
+  "lang": "hi",
+  "triage": {
+   "summary": "C-1004 (पोस्ट-मैट्रिक छात्रवृत्ति): सभी आवश्यक फ़ील्ड और पाँचों दस्तावेज़ मौजूद हैं, नाम मेल खाते हैं, समय-सीमा के भीतर जमा हुआ है, और वार्षिक आय सीमा के भीतर है। अधिकारी द्वारा अंतिम समीक्षा के लिए स्वीकृति की सिफ़ारिश।",
+   "missing_items": [],
+   "risks": [],
+   "recommended_action": "approve",
+   "reason": "जाँच के सभी बिंदु पास हुए: (1) आवेदन 2026-10-22 को जमा हुआ, जो अंतिम तिथि 2026-10-31 से पहले है। (2) वार्षिक पारिवारिक आय 120000 INR है, जो 250000 INR की सीमा से कम है। (3) आवश्यक फ़ील्ड course, annual_income, institution भरे हुए हैं। (4) आधार, आय प्रमाण पत्र, अंकपत्र, बैंक पासबुक और प्रवेश पत्र मौजूद हैं, सभी में नाम \"Kavya Shetty\" है, और किसी दस्तावेज़ में कोई समस्या नहीं मिली। (5) आय प्रमाण पत्र की समाप्ति 2027-03-31 है, इसलिए जमा करने की तिथि पर वह वैध है। अंतिम निर्णय अधिकारी का है।",
+   "message_to_applicant": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಶೆಟ್ಟಿ ಅವರೇ, ನಿಮ್ಮ ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಜಿಯ ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳು ಸರಿಯಾಗಿವೆ. ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ದಾಖಲೆ ಕಳುಹಿಸುವ ಅಗತ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಅರ್ಜಿಯನ್ನು ಅಧಿಕಾರಿ ಪರಿಶೀಲಿಸಿ ಮುಂದಿನ ಕ್ರಮ ತಿಳಿಸುತ್ತಾರೆ. ಧನ್ಯವಾದಗಳು.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004"
+    },
+    "output": "{\"id\": \"C-1004\", \"scheme_id\": \"scholarship_post_matric\", \"applicant\": {\"name\": \"Kavya Shetty\", \"language\": \"kn\", \"village\": \"Udupi\"}, \"applicant_note\": \"ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ.\", \"incident_date\": null, \"submitted_on\": \"2026-10-22\", \"fields\": {\"course\": \"B.Com\", \"annual_income\": 120000, \"institution\": \"Govt. First Grade College\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"expires_on\": null}, {\"type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"expires_on\": \"2027-03-31\"}, {\"type\": \"marksheet\", \"present\": true, \"name…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "scholarship_post_matric"
+    },
+    "output": "{\"title\": \"Post-Matric Scholarship\", \"required_fields\": [\"course\", \"annual_income\", \"institution\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card\"}, {\"type\": \"income_certificate\", \"label\": \"Income certificate (valid for 12 months from issue)\"}, {\"type\": \"marksheet\", \"label\": \"Last qualifying marksheet\"}, {\"type\": \"bank_passbook\", \"label\": \"Bank passbook first page\"}, {\"type\": \"admission_letter\", \"label\": \"Admission letter / bonafide certificate\"}], \"deadline\": \"2026-10-31\", \"rules\": [\"Application must be submitted on or before 31 Oct 2026.\", \"Income certificate must not be …",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004"
+    },
+    "output": "{\"rule\": \"deadline 2026-10-31\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "income_certificate"
+    },
+    "output": "{\"doc_type\": \"income_certificate\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "marksheet"
+    },
+    "output": "{\"doc_type\": \"marksheet\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "bank_passbook"
+    },
+    "output": "{\"doc_type\": \"bank_passbook\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1004",
+     "doc_type": "admission_letter"
+    },
+    "output": "{\"doc_type\": \"admission_letter\", \"present\": true, \"name_on_doc\": \"Kavya Shetty\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "C-1004 (पोस्ट-मैट्रिक छात्रवृत्ति): सभी आवश्यक फ़ील्ड और पाँचों दस्तावेज़ मौजूद हैं, नाम मेल खाते हैं, समय-सीमा के भीतर जमा हुआ है, और वार्षिक आय सीमा के भीतर है। अधिकारी द्वारा अंतिम समीक्षा के लिए स्वीकृति की सिफ़ारिश।",
+     "missing_items": [],
+     "risks": [],
+     "recommended_action": "approve",
+     "reason": "जाँच के सभी बिंदु पास हुए: (1) आवेदन 2026-10-22 को जमा हुआ, जो अंतिम तिथि 2026-10-31 से पहले है। (2) वार्षिक पारिवारिक आय 120000 INR है, जो 250000 INR की सीमा से कम है। (3) आवश्यक फ़ील्ड course, annual_income, institution भरे हुए हैं। (4) आधार, आय प्रमाण पत्र, अंकपत्र, बैंक पासबुक और प्रवेश पत्र मौजूद हैं, सभी में नाम \"Kavya Shetty\" है, और किसी दस्तावेज़ में कोई समस्या नहीं मिली। (5) आय प्रमाण पत्र की समाप्ति 2027-03-31 है, इसलिए जमा करने की तिथि पर वह वैध है। अंतिम निर्णय अधिकारी का है।",
+     "message_to_applicant": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಶೆಟ್ಟಿ ಅವರೇ, ನಿಮ್ಮ ಮೊದಲ ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಜಿಯ ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳು ಸರಿಯಾಗಿವೆ. ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ದಾಖಲೆ ಕಳುಹಿಸುವ ಅಗತ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಅರ್ಜಿಯನ್ನು ಅಧಿಕಾರಿ ಪರಿಶೀಲಿಸಿ ಮುಂದಿನ ಕ್ರಮ ತಿಳಿಸುತ್ತಾರೆ. ಧನ್ಯವಾದಗಳು.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1005",
+  "lang": "hi",
+  "triage": {
+   "summary": "केस C-1005 (राशन कार्ड अपडेट): आधार, मौजूदा राशन कार्ड और समय-सीमा ठीक हैं, लेकिन पता प्रमाण पर नाम 'Sunita Kumari' है जबकि आधार और आवेदन पर 'Sunita Devi' है। नियम के अनुसार पता प्रमाण का नाम मुखिया के आधार से मेल खाना चाहिए। आवेदक से सही पता प्रमाण मांगें।",
+   "missing_items": [
+    {
+     "item": "'Sunita Devi' नाम वाला पता प्रमाण (address proof), या ऐसा दस्तावेज़ जो 'Sunita Kumari' और 'Sunita Devi' को एक ही व्यक्ति से जोड़ता हो (जैसे विवाह प्रमाण पत्र)",
+     "why": "पता प्रमाण पर नाम 'Sunita Kumari' है, जबकि मुखिया के आधार और आवेदक का नाम 'Sunita Devi' है। योजना का नियम है कि पता प्रमाण का नाम आधार से मेल खाना चाहिए।"
+    }
+   ],
+   "risks": [
+    {
+     "issue": "पता प्रमाण पर नाम आधार/आवेदक के नाम से मेल नहीं खाता",
+     "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch); address_proof name_on_doc: 'Sunita Kumari'"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "योजना के नियम के अनुसार पता प्रमाण पर नाम मुखिया के आधार से मेल खाना चाहिए। यहां पता प्रमाण पर 'Sunita Kumari' लिखा है, जबकि आधार और आवेदक का नाम 'Sunita Devi' है। यह आवेदक द्वारा ठीक की जा सकने वाली समस्या है, इसलिए अस्वीकार करने के बजाय अतिरिक्त जानकारी मांगना उचित है। आधार, मौजूदा राशन कार्ड और समय-सीमा (कोई सीमा नहीं) ठीक हैं।",
+   "message_to_applicant": "नमस्ते सुनिता देवी जी, आपके राशन कार्ड अपडेट के आवेदन में एक जरूरी बात ठीक करनी है। आपके पता प्रमाण (address proof) पर नाम 'Sunita Kumari' लिखा है, जबकि आधार और आवेदन पर नाम 'Sunita Devi' है। कृपया ऐसा पता प्रमाण लेकर आएं जिस पर 'Sunita Devi' नाम हो। अगर पता प्रमाण पर दूसरा नाम है, तो दोनों नाम एक ही व्यक्ति के हैं, यह दिखाने वाला दस्तावेज़ (जैसे विवाह प्रमाण पत्र) भी ले आएं। धन्यवाद।",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005"
+    },
+    "output": "{\"id\": \"C-1005\", \"scheme_id\": \"ration_card_update\", \"applicant\": {\"name\": \"Sunita Devi\", \"language\": \"hi\", \"village\": \"Barabanki\"}, \"applicant_note\": \"परिवार में एक नया सदस्य जोड़ना है।\", \"incident_date\": null, \"submitted_on\": \"2026-10-19\", \"fields\": {\"update_type\": \"add_member\", \"household_size\": 5}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"expires_on\": null}, {\"type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Sunita Kumari\", \"expires_on\": null}, {\"type\": \"existing_ration_card\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"expires_on\": null}…",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "ration_card_update"
+    },
+    "output": "{\"title\": \"Ration Card Update\", \"required_fields\": [\"update_type\", \"household_size\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card of the head of household\"}, {\"type\": \"address_proof\", \"label\": \"Address proof\"}, {\"type\": \"existing_ration_card\", \"label\": \"Existing ration card\"}], \"claim_window_days\": null, \"rules\": [\"Name on address proof must match the head of household on Aadhaar.\", \"Existing ration card copy is mandatory for any update.\"]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005"
+    },
+    "output": "{\"rule\": \"no time limit for this scheme\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "address_proof"
+    },
+    "output": "{\"doc_type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Sunita Kumari\", \"issues\": [{\"code\": \"name_mismatch\", \"detail\": \"Applicant 'Sunita Devi' vs document 'Sunita Kumari'\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1005",
+     "doc_type": "existing_ration_card"
+    },
+    "output": "{\"doc_type\": \"existing_ration_card\", \"present\": true, \"name_on_doc\": \"Sunita Devi\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "केस C-1005 (राशन कार्ड अपडेट): सभी अनिवार्य दस्तावेज़ मौजूद हैं और समय-सीमा में हैं, लेकिन पता प्रमाण (address proof) पर नाम 'Sunita Kumari' है जबकि आवेदक और आधार पर 'Sunita Devi' है। नियम के अनुसार पता प्रमाण पर नाम मुखिया के आधार से मेल खाना चाहिए। आवेदक से सही पता प्रमाण या नाम बदलाव का सबूत मांगें।</summary>\n<parameter name=\"missing_items\">[{\"item\": \"नाम से मेल खाने वाला पता प्रमाण (address proof) — जिस पर 'Sunita Devi' नाम हो, या ऐसा दस्तावेज़ जो 'Sunita Kumari' और 'Sunita Devi' को एक ही व्यक्ति से जोड़ता हो (जैसे विवाह प्रमाण पत्र या राजपत्र/गैज़ेट)\", \"why\": \"पता प्रमाण पर नाम 'Sunita Kumari' है, जबकि आधार (मुखिया) और आवेदक का नाम 'Sunita Devi' है। योजना का नियम है कि पता प्रमाण का नाम मुखिया के आधार से मेल खाना चाहिए।\"}]",
+     "risks": [
+      {
+       "issue": "पता प्रमाण पर नाम आधार/आवेदक के नाम से मेल नहीं खाता",
+       "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch); address_proof name_on_doc: 'Sunita Kumari'"
+      },
+      {
+       "issue": "नए सदस्य जोड़ने के लिए परिवार के आकार का सत्यापन आवश्यक है; दस्तावेज़ों में परिवार के नए सदस्य का कोई प्रमाण नहीं दिखा",
+       "evidence": "fields: update_type 'add_member', household_size 5; required_documents: aadhaar, address_proof, existing_ration_card (नए सदस्य का दस्तावेज़ सूची में नहीं है)"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "योजना के नियम के अनुसार पता प्रमाण पर नाम मुखिया के आधार से मेल खाना चाहिए। यहां पता प्रमाण पर 'Sunita Kumari' लिखा है, जबकि आधार और आवेदक का नाम 'Sunita Devi' है। यह आवेदक द्वारा ठीक की जा सकने वाली समस्या है, इसलिए अस्वीकार करने के बजाय अतिरिक्त जानकारी मांगना उचित है। अन्य अनिवार्य दस्तावेज़ (आधार, मौजूदा राशन कार्ड) सही पाए गए और समय-सीमा का कोई बंधन नहीं है। अधिकारी को यह भी देखना चाहिए कि नया सदस्य जोड़ने के लिए कोई विशेष दस्तावेज़ योजना में आवश्यक है या नहीं।",
+     "message_to_applicant": "नमस्ते सुनिता देवी जी, आपके राशन कार्ड अपडेट के आवेदन में एक जरूरी बात ठीक करनी है। आपके पता प्रमाण (address proof) पर नाम 'Sunita Kumari' लिखा है, जबकि आधार और आवेदन पर नाम 'Sunita Devi' है। कृपया ऐसा पता प्रमाण लेकर आएं जिस पर 'Sunita Devi' नाम हो। अगर पता प्रमाण पर दूसरा नाम है, तो दोनों नाम एक ही व्यक्ति के हैं, यह दिखाने वाला दस्तावेज़ (जैसे विवाह प्रमाण पत्र) भी ले आएं। धन्यवाद।",
+     "confidence": "high"
+    },
+    "output": "submit_triage is missing required fields: ['missing_items']",
+    "is_error": true
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "केस C-1005 (राशन कार्ड अपडेट): आधार, मौजूदा राशन कार्ड और समय-सीमा ठीक हैं, लेकिन पता प्रमाण पर नाम 'Sunita Kumari' है जबकि आधार और आवेदन पर 'Sunita Devi' है। नियम के अनुसार पता प्रमाण का नाम मुखिया के आधार से मेल खाना चाहिए। आवेदक से सही पता प्रमाण मांगें।",
+     "missing_items": [
+      {
+       "item": "'Sunita Devi' नाम वाला पता प्रमाण (address proof), या ऐसा दस्तावेज़ जो 'Sunita Kumari' और 'Sunita Devi' को एक ही व्यक्ति से जोड़ता हो (जैसे विवाह प्रमाण पत्र)",
+       "why": "पता प्रमाण पर नाम 'Sunita Kumari' है, जबकि मुखिया के आधार और आवेदक का नाम 'Sunita Devi' है। योजना का नियम है कि पता प्रमाण का नाम आधार से मेल खाना चाहिए।"
+      }
+     ],
+     "risks": [
+      {
+       "issue": "पता प्रमाण पर नाम आधार/आवेदक के नाम से मेल नहीं खाता",
+       "evidence": "Applicant 'Sunita Devi' vs document 'Sunita Kumari' (code: name_mismatch); address_proof name_on_doc: 'Sunita Kumari'"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "योजना के नियम के अनुसार पता प्रमाण पर नाम मुखिया के आधार से मेल खाना चाहिए। यहां पता प्रमाण पर 'Sunita Kumari' लिखा है, जबकि आधार और आवेदक का नाम 'Sunita Devi' है। यह आवेदक द्वारा ठीक की जा सकने वाली समस्या है, इसलिए अस्वीकार करने के बजाय अतिरिक्त जानकारी मांगना उचित है। आधार, मौजूदा राशन कार्ड और समय-सीमा (कोई सीमा नहीं) ठीक हैं।",
+     "message_to_applicant": "नमस्ते सुनिता देवी जी, आपके राशन कार्ड अपडेट के आवेदन में एक जरूरी बात ठीक करनी है। आपके पता प्रमाण (address proof) पर नाम 'Sunita Kumari' लिखा है, जबकि आधार और आवेदन पर नाम 'Sunita Devi' है। कृपया ऐसा पता प्रमाण लेकर आएं जिस पर 'Sunita Devi' नाम हो। अगर पता प्रमाण पर दूसरा नाम है, तो दोनों नाम एक ही व्यक्ति के हैं, यह दिखाने वाला दस्तावेज़ (जैसे विवाह प्रमाण पत्र) भी ले आएं। धन्यवाद।",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "case_id": "C-1006",
+  "lang": "hi",
+  "triage": {
+   "summary": "केस C-1006 (राशन कार्ड अपडेट – पता बदलाव): आवेदन में मौजूदा राशन कार्ड की प्रति और अनिवार्य फ़ील्ड 'household_size' नहीं है। आवेदक से ये दस्तावेज़ और जानकारी मांगें।",
+   "missing_items": [
+    {
+     "item": "मौजूदा राशन कार्ड की प्रति (existing_ration_card)",
+     "why": "योजना के नियम के अनुसार किसी भी अपडेट के लिए मौजूदा राशन कार्ड की प्रति अनिवार्य है; validate_document ने 'existing_ration_card not attached' दर्शाया।"
+    },
+    {
+     "item": "परिवार का आकार (household_size फ़ील्ड)",
+     "why": "योजना का अनिवार्य फ़ील्ड है, लेकिन केस फ़ाइल के fields में केवल 'update_type: address_change' है; household_size मौजूद नहीं है।"
+    }
+   ],
+   "risks": [
+    {
+     "issue": "मौजूदा राशन कार्ड की प्रति संलग्न नहीं है, जो हर अपडेट के लिए अनिवार्य है",
+     "evidence": "existing_ration_card: present=false, issues=[{code: 'missing', detail: 'existing_ration_card not attached'}]"
+    },
+    {
+     "issue": "अनिवार्य फ़ील्ड 'household_size' भरा नहीं गया है",
+     "evidence": "required_fields: [update_type, household_size]; case fields: {update_type: 'address_change'}"
+    }
+   ],
+   "recommended_action": "request_more_info",
+   "reason": "आधार (नाम: Mohammed Irfan) और पते का प्रमाण (नाम: Mohammed Irfan) मौजूद हैं और कोई समस्या नहीं दिखती; नाम का मिलान नियम पूरा होता है। समय-सीमा का कोई नियम नहीं है (within_limit: true)। लेकिन मौजूदा राशन कार्ड की प्रति नहीं है और household_size फ़ील्ड खाली है, इसलिए केस अधूरा है। आवेदक इन्हें जमा करके ठीक कर सकता है, इसलिए reject की बजाय request_more_info सुझाया गया है।",
+   "message_to_applicant": "Dear Mohammed Irfan, thank you for your ration card address change request. To continue, please send us: (1) a copy of your existing ration card, and (2) the number of people in your household (household size). Your Aadhaar and address proof are already received and look fine. Thank you.",
+   "confidence": "high"
+  },
+  "trace": [
+   {
+    "step": 1,
+    "tool": "get_case",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006"
+    },
+    "output": "{\"id\": \"C-1006\", \"scheme_id\": \"ration_card_update\", \"applicant\": {\"name\": \"Mohammed Irfan\", \"language\": \"en\", \"village\": \"Bengaluru\"}, \"applicant_note\": \"Change of address after moving house.\", \"incident_date\": null, \"submitted_on\": \"2026-10-21\", \"fields\": {\"update_type\": \"address_change\"}, \"documents\": [{\"type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"expires_on\": null}, {\"type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"expires_on\": null}]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "get_scheme_requirements",
+    "source": "mcp",
+    "input": {
+     "scheme_id": "ration_card_update"
+    },
+    "output": "{\"title\": \"Ration Card Update\", \"required_fields\": [\"update_type\", \"household_size\"], \"required_documents\": [{\"type\": \"aadhaar\", \"label\": \"Aadhaar card of the head of household\"}, {\"type\": \"address_proof\", \"label\": \"Address proof\"}, {\"type\": \"existing_ration_card\", \"label\": \"Existing ration card\"}], \"claim_window_days\": null, \"rules\": [\"Name on address proof must match the head of household on Aadhaar.\", \"Existing ration card copy is mandatory for any update.\"]}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "check_deadline",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006"
+    },
+    "output": "{\"rule\": \"no time limit for this scheme\", \"within_limit\": true}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "aadhaar"
+    },
+    "output": "{\"doc_type\": \"aadhaar\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 2,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "address_proof"
+    },
+    "output": "{\"doc_type\": \"address_proof\", \"present\": true, \"name_on_doc\": \"Mohammed Irfan\", \"issues\": []}",
+    "is_error": false
+   },
+   {
+    "step": 3,
+    "tool": "validate_document",
+    "source": "mcp",
+    "input": {
+     "case_id": "C-1006",
+     "doc_type": "existing_ration_card"
+    },
+    "output": "{\"doc_type\": \"existing_ration_card\", \"present\": false, \"issues\": [{\"code\": \"missing\", \"detail\": \"existing_ration_card not attached\"}]}",
+    "is_error": false
+   },
+   {
+    "step": 4,
+    "tool": "submit_triage",
+    "source": "local",
+    "input": {
+     "summary": "केस C-1006 (राशन कार्ड अपडेट – पता बदलाव): आवेदन में मौजूदा राशन कार्ड की प्रति और अनिवार्य फ़ील्ड 'household_size' नहीं है। आवेदक से ये दस्तावेज़ और जानकारी मांगें।",
+     "missing_items": [
+      {
+       "item": "मौजूदा राशन कार्ड की प्रति (existing_ration_card)",
+       "why": "योजना के नियम के अनुसार किसी भी अपडेट के लिए मौजूदा राशन कार्ड की प्रति अनिवार्य है; validate_document ने 'existing_ration_card not attached' दर्शाया।"
+      },
+      {
+       "item": "परिवार का आकार (household_size फ़ील्ड)",
+       "why": "योजना का अनिवार्य फ़ील्ड है, लेकिन केस फ़ाइल के fields में केवल 'update_type: address_change' है; household_size मौजूद नहीं है।"
+      }
+     ],
+     "risks": [
+      {
+       "issue": "मौजूदा राशन कार्ड की प्रति संलग्न नहीं है, जो हर अपडेट के लिए अनिवार्य है",
+       "evidence": "existing_ration_card: present=false, issues=[{code: 'missing', detail: 'existing_ration_card not attached'}]"
+      },
+      {
+       "issue": "अनिवार्य फ़ील्ड 'household_size' भरा नहीं गया है",
+       "evidence": "required_fields: [update_type, household_size]; case fields: {update_type: 'address_change'}"
+      }
+     ],
+     "recommended_action": "request_more_info",
+     "reason": "आधार (नाम: Mohammed Irfan) और पते का प्रमाण (नाम: Mohammed Irfan) मौजूद हैं और कोई समस्या नहीं दिखती; नाम का मिलान नियम पूरा होता है। समय-सीमा का कोई नियम नहीं है (within_limit: true)। लेकिन मौजूदा राशन कार्ड की प्रति नहीं है और household_size फ़ील्ड खाली है, इसलिए केस अधूरा है। आवेदक इन्हें जमा करके ठीक कर सकता है, इसलिए reject की बजाय request_more_info सुझाया गया है।",
+     "message_to_applicant": "Dear Mohammed Irfan, thank you for your ration card address change request. To continue, please send us: (1) a copy of your existing ration card, and (2) the number of people in your household (household size). Your Aadhaar and address proof are already received and look fine. Thank you.",
+     "confidence": "high"
+    },
+    "output": "accepted",
+    "is_error": false
+   }
+  ],
+  "model": "claude-haiku-5-5"
+ }
+]

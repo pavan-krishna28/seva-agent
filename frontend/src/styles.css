@@ -65,3 +65,41 @@ summary { cursor: pointer; font-weight: 600; }
 .trace pre { white-space: pre-wrap; word-break: break-word; background: #f3f2ec; padding: 8px; border-radius: 6px; font-size: 12px; margin: 4px 0 0; }
 .tag { margin-left: 8px; font-size: 11px; padding: 1px 6px; border-radius: 4px; background: #e3ecfb; color: #2a4f9a; }
 .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+
+/* login */
+.login { max-width: 380px; margin: 8vh auto 0; display: grid; gap: 12px; }
+.login h1 { margin: 8px 0 0; font-size: 26px; color: var(--brand); }
+.login form { display: grid; gap: 12px; }
+.login label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+input { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font: inherit; font-size: 16px; }
+button.link { background: none; border: 0; color: var(--brand); cursor: pointer; font: inherit; text-decoration: underline; padding: 6px 0; }
+button.back { display: none; }
+header .link { margin-left: auto; }
+
+/* overview */
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+.tile { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 2px; }
+.tile b { font-size: 26px; line-height: 1.1; }
+.tile span { font-size: 12px; color: var(--muted); }
+.tile.hot b { color: var(--bad); }
+.tile.good b { color: var(--ok); }
+.sortnote { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.case .row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.lvl { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.lvl.high { background: #fbe0de; color: var(--bad); }
+.lvl.medium { background: #fff1d6; color: var(--warn); }
+.lvl.low { background: #e6efe9; color: var(--ok); }
+.case .why { font-size: 13px; color: #3b4640; }
+.badge.sm { font-size: 11px; padding: 2px 8px; }
+.flags { margin: 0; padding-left: 18px; color: var(--bad); }
+.docs li.absent { color: var(--bad); }
+
+@media (max-width: 760px) {
+  .tiles { grid-template-columns: repeat(2, 1fr); }
+  main.has-sel nav { display: none; }
+  main:not(.has-sel) .detail { display: none; }
+  button.back { display: inline-block; margin-bottom: 8px; }
+  .actions button { flex: 1 1 100%; padding: 14px 16px; }
+  button.primary { width: 100%; padding: 14px 16px; }
+  .app { padding: 12px; }
+}

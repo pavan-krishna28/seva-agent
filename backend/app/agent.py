@@ -24,6 +24,9 @@ Rules:
 - Prefer request_more_info over reject when the applicant can fix the problem.
 - Write message_to_applicant in the applicant's own language (the case file gives it), in short, polite,
   plain words, listing exactly what they need to bring or fix. No jargon.
+- The officer reads the interface in {officer_language}. Write summary, reason, every missing_items[].item and .why,
+  and every risks[].issue in {officer_language}. Keep risks[].evidence as the exact values found in the tool results.
+  message_to_applicant stays in the applicant's own language, whatever the officer's language is.
 - When finished, call submit_triage exactly once. Do not write a final answer in plain text."""
 
 SUBMIT_TRIAGE_TOOL = {
@@ -32,7 +35,7 @@ SUBMIT_TRIAGE_TOOL = {
     "input_schema": {
         "type": "object",
         "properties": {
-            "summary": {"type": "string", "description": "One or two sentences for the officer, in English."},
+            "summary": {"type": "string", "description": "One or two sentences for the officer, in the officer's language."},
             "missing_items": {
                 "type": "array",
                 "items": {
@@ -50,7 +53,7 @@ SUBMIT_TRIAGE_TOOL = {
                 },
             },
             "recommended_action": {"type": "string", "enum": ["approve", "request_more_info", "escalate", "reject"]},
-            "reason": {"type": "string", "description": "Why this action, in English, for the officer."},
+            "reason": {"type": "string", "description": "Why this action, for the officer, in the officer's language."},
             "message_to_applicant": {"type": "string", "description": "Message to the applicant in their own language."},
             "confidence": {"type": "string", "enum": ["low", "medium", "high"]},
         },
@@ -82,7 +85,8 @@ def _preview(obj: Any, limit: int = 600) -> str:
     return s if len(s) <= limit else s[:limit] + "…"
 
 
-async def run_triage(case_id: str, llm: LLM, toolbox: McpToolbox, max_steps: int = 10) -> dict:
+async def run_triage(case_id: str, llm: LLM, toolbox: McpToolbox, max_steps: int = 10, lang: str = "en") -> dict:
+    system = SYSTEM_PROMPT.replace("{officer_language}", LANG_NAMES.get(lang, "English"))
     tools = toolbox.tools + [SUBMIT_TRIAGE_TOOL]
     mcp_names = {t["name"] for t in toolbox.tools}
     messages: list[dict] = [
@@ -91,7 +95,7 @@ async def run_triage(case_id: str, llm: LLM, toolbox: McpToolbox, max_steps: int
     trace: list[dict] = []
 
     for step in range(1, max_steps + 1):
-        resp = await llm.create(SYSTEM_PROMPT, messages, tools)
+        resp = await llm.create(system, messages, tools)
         messages.append({"role": "assistant", "content": resp["content"]})
         calls = [b for b in resp["content"] if b["type"] == "tool_use"]
 

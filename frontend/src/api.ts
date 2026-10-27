@@ -11,6 +11,22 @@ export interface CaseSummary {
   status: string;
 }
 
+export interface Flag { code: string; detail: string }
+
+export interface OverviewCase extends CaseSummary {
+  score: number;
+  level: "high" | "medium" | "low";
+  flags: Flag[];
+  waiting_days: number;
+  needs_fix: boolean;
+  agent: { action: Action; confidence: "low" | "medium" | "high" } | null;
+}
+
+export interface Overview {
+  counts: { total: number; open: number; attention: number; ready: number; decided: number };
+  cases: OverviewCase[];
+}
+
 export interface CaseDoc {
   type: string;
   present: boolean;
@@ -50,6 +66,7 @@ export interface TraceStep {
 
 export interface TriageRecord {
   case_id: string;
+  lang: Lang;
   status: string;
   triage: Triage;
   trace: TraceStep[];
@@ -58,8 +75,23 @@ export interface TriageRecord {
   decisions?: { decision: string; final_message: string; message_edited: boolean; decided_at: string; note: string | null }[];
 }
 
+const TOKEN_KEY = "seva-token";
+export const session = {
+  get: () => sessionStorage.getItem(TOKEN_KEY),
+  set: (t: string) => sessionStorage.setItem(TOKEN_KEY, t),
+  clear: () => sessionStorage.removeItem(TOKEN_KEY),
+};
+
 async function req<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(path, { headers: { "Content-Type": "application/json" }, ...init });
+  const token = session.get();
+  const res = await fetch(path, {
+    ...init,
+    headers: { "Content-Type": "application/json", ...(token ? { Authorization: `Bearer ${token}` } : {}) },
+  });
+  if (res.status === 401 && token) {
+    session.clear();
+    window.dispatchEvent(new Event("seva-signed-out"));
+  }
   if (!res.ok) {
     let detail = res.statusText;
     try {
@@ -67,19 +99,21 @@ async function req<T>(path: string, init?: RequestInit): Promise<T> {
     } catch {
       /* ignore */
     }
-    throw new Error(detail);
+    throw new Error(typeof detail === "string" ? detail : JSON.stringify(detail));
   }
   return res.json() as Promise<T>;
 }
 
 export const api = {
-  cases: () => req<CaseSummary[]>("/api/cases"),
+  login: (username: string, password: string) =>
+    req<{ token: string; user: string }>("/api/login", { method: "POST", body: JSON.stringify({ username, password }) }),
+  overview: (lang: Lang) => req<Overview>(`/api/overview?lang=${lang}`),
   getCase: (id: string) => req<CaseFile>(`/api/cases/${id}`),
-  getTriage: (id: string) => req<TriageRecord>(`/api/cases/${id}/triage`),
-  analyze: (id: string) => req<TriageRecord>(`/api/cases/${id}/analyze`, { method: "POST" }),
-  decide: (id: string, decision: Decision, message: string, note?: string) =>
+  getTriage: (id: string, lang: Lang) => req<TriageRecord>(`/api/cases/${id}/triage?lang=${lang}`),
+  analyze: (id: string, lang: Lang) => req<TriageRecord>(`/api/cases/${id}/analyze?lang=${lang}`, { method: "POST" }),
+  decide: (id: string, decision: Decision, message: string, lang: Lang, note?: string) =>
     req<{ status: string }>(`/api/cases/${id}/decision`, {
       method: "POST",
-      body: JSON.stringify({ decision, message, note }),
+      body: JSON.stringify({ decision, message, note, lang }),
     }),
 };

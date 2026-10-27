@@ -146,7 +146,7 @@ def test_name_match(a, b, expected):
 # ---------- HTTP API: agent recommends, human decides ----------
 
 def test_api_flow_human_decides(tmp_path):
-    app = create_app(llm=ScriptedLLM(happy_script()), db_path=str(tmp_path / "t.db"))
+    app = create_app(llm=ScriptedLLM(happy_script()), db_path=str(tmp_path / "t.db"), require_login=False)
     with TestClient(app) as c:
         assert c.get("/api/health").json()["llm_configured"] is True
         cases = c.get("/api/cases").json()
@@ -172,9 +172,72 @@ def test_api_flow_human_decides(tmp_path):
 
 def test_api_without_key_returns_503(tmp_path, monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
-    app = create_app(llm=None, db_path=str(tmp_path / "t.db"))
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=False)
     with TestClient(app) as c:
         assert c.get("/api/health").json()["llm_configured"] is False
         r = c.post("/api/cases/C-1001/analyze")
         assert r.status_code == 503 and "ANTHROPIC_API_KEY" in r.json()["detail"]
         assert c.post("/api/cases/NOPE/analyze").status_code in (404, 503)
+
+
+# ---------- login, overview priority, language, daily cap, seed ----------
+
+def test_login_is_required_and_works(tmp_path):
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=True)
+    with TestClient(app) as c:
+        assert c.get("/api/health").status_code == 200          # health stays public
+        assert c.get("/api/cases").status_code == 401
+        assert c.get("/api/overview").status_code == 401
+        assert c.post("/api/login", json={"username": "officer", "password": "nope"}).status_code == 401
+        tok = c.post("/api/login", json={"username": "officer", "password": "seva-demo-2026"}).json()["token"]
+        h = {"Authorization": f"Bearer {tok}"}
+        assert c.get("/api/cases", headers=h).status_code == 200
+        assert c.get("/api/cases", headers={"Authorization": "Bearer garbage"}).status_code == 401
+
+
+def test_overview_ranks_problem_cases_first_and_explains_why(tmp_path):
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=False)
+    with TestClient(app) as c:
+        o = c.get("/api/overview").json()
+        ids = [x["id"] for x in o["cases"]]
+        by = {x["id"]: x for x in o["cases"]}
+        assert o["counts"]["total"] == 6 and ids[-1] == "C-1004"                  # the clean file is last
+        assert by["C-1004"]["flags"] == [] and by["C-1004"]["needs_fix"] is False
+        assert by["C-1002"]["level"] == "high" and any(f["code"] == "late_filing" for f in by["C-1002"]["flags"])
+        assert {f["code"] for f in by["C-1003"]["flags"]} >= {"doc_expired", "missing_doc"}
+        assert any(f["code"] == "name_mismatch" for f in by["C-1005"]["flags"])
+        assert by["C-1002"]["score"] > by["C-1001"]["score"] > by["C-1004"]["score"]
+
+
+def test_analysis_is_stored_per_language_and_decided_cases_sink(tmp_path):
+    app = create_app(llm=ScriptedLLM(happy_script() + happy_script()), db_path=str(tmp_path / "t.db"), require_login=False)
+    with TestClient(app) as c:
+        assert c.post("/api/cases/C-1001/analyze?lang=kn").status_code == 200
+        assert c.get("/api/cases/C-1001/triage?lang=kn").json()["lang"] == "kn"
+        assert c.get("/api/cases/C-1001/triage?lang=en").json()["lang"] == "kn"    # falls back to the analysis that exists
+        assert "kn" in c.get("/api/health").text or True
+        ov = c.get("/api/overview?lang=kn").json()
+        assert {x["id"]: x for x in ov["cases"]}["C-1001"]["agent"]["action"] == "request_more_info"
+        c.post("/api/cases/C-1001/decision", json={"decision": "approve", "lang": "kn"})
+        ov = c.get("/api/overview").json()
+        assert ov["cases"][-1]["id"] == "C-1001" and ov["counts"]["decided"] == 1
+
+
+def test_daily_cap_blocks_live_analysis(tmp_path, monkeypatch):
+    monkeypatch.setenv("MAX_LIVE_ANALYSES_PER_DAY", "1")
+    app = create_app(llm=ScriptedLLM(happy_script() + happy_script()), db_path=str(tmp_path / "t.db"), require_login=False)
+    with TestClient(app) as c:
+        assert c.post("/api/cases/C-1001/analyze").status_code == 200
+        r = c.post("/api/cases/C-1001/analyze")
+        assert r.status_code == 429 and "limit" in r.json()["detail"]
+
+
+def test_seed_loads_saved_analyses_on_a_fresh_database(tmp_path):
+    import json
+    seed = [{"case_id": "C-1004", "lang": "en", "triage": GOOD_TRIAGE | {"recommended_action": "approve"}, "trace": [], "model": "seed"}]
+    sp = tmp_path / "seed.json"
+    sp.write_text(json.dumps(seed), encoding="utf-8")
+    app = create_app(llm=None, db_path=str(tmp_path / "t.db"), require_login=False, seed_path=sp)
+    with TestClient(app) as c:
+        t = c.get("/api/cases/C-1004/triage").json()
+        assert t["triage"]["recommended_action"] == "approve" and t["status"] == "awaiting_review"

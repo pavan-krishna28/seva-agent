@@ -18,7 +18,9 @@ class AnthropicLLM:
 
         self.model = model or os.getenv("ANTHROPIC_MODEL", "claude-sonnet-5-5")
         self.max_tokens = max_tokens
-        self.client = AsyncAnthropic()  # reads ANTHROPIC_API_KEY
+        # Reads ANTHROPIC_API_KEY. Keys that are not tied to one workspace also need ANTHROPIC_WORKSPACE_ID.
+        ws = os.getenv("ANTHROPIC_WORKSPACE_ID")
+        self.client = AsyncAnthropic(default_headers={"anthropic-workspace-id": ws} if ws else None)
 
     async def create(self, system: str, messages: list[dict], tools: list[dict]) -> dict:
         r = await self.client.messages.create(

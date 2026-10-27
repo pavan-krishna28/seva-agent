@@ -4,6 +4,16 @@ A case desk for government officers, in Kannada, Hindi and English. An AI agent 
 
 > **Live demo:** https://seva-agent.onrender.com (free hosting: the first visit after a quiet spell can take up to a minute to wake up) · **Login:** the credentials are in the submission email (the demo account holds only made-up data)
 
+## Try it in two minutes
+
+1. Open the live demo and sign in (credentials are in the submission email).
+2. Switch the language at the top: English, हिन्दी or ಕನ್ನಡ. The screen, the ranking reasons and the AI's summary all follow it.
+3. The list is already ranked: the urgent case is first, the clean file is last. Open a case to see why.
+4. Each case already has a saved AI analysis. Press "Check with agent" or "Check again" to run the agent live (about ten seconds).
+5. Edit the message to the applicant if you like, then Approve, Ask for more info, or Reject. Open "What the agent did" to see every tool call.
+
+All applicant data in this project is made up. Decisions reset when the demo restarts.
+
 ## The problem
 
 In a taluk office, a clerk or officer opens one application at a time, finds the scheme rules, checks every attached document by hand, notices (or misses) that the bank passbook says "Ramesh G" while the form says "Ramesh Gowda", and writes a letter to the applicant asking for what is missing. The same few mistakes repeat: a missing photo, an expired income certificate, a name that does not match across documents, a claim filed after the allowed window.
@@ -45,6 +55,8 @@ React + TypeScript UI ──HTTP──▶ FastAPI ──▶ Agent loop ──▶
 
 ## Demo cases (planted problems)
 
+I ran the agent on all six cases in all three languages and checked each result against this table: every one found the planted problem. Those 18 results are the saved analyses in the live demo.
+
 | Case | Language | What the agent should find |
 |---|---|---|
 | C-1001 | Kannada | Crop photo missing; bank passbook name is abbreviated ("Ramesh G") |
@@ -62,7 +74,7 @@ You need Python 3.11+ and Node 18+.
 # backend
 cd backend
 python -m venv .venv
-.venv\Scriptsctivate
+.venv\Scripts\activate
 pip install -r requirements.txt
 copy .env.example .env        # then fill in the settings listed in the file
 uvicorn app.main:app --reload --port 8000
@@ -89,6 +101,10 @@ pytest
 ```
 
 17 tests. They run the real agent loop against the real MCP server over stdio with a **scripted model** standing in for Claude, so they verify the plumbing without calling any outside service: tool discovery, parallel tool calls, error recovery, schema validation, the step cap, the human-decision API, login, the priority ranking and its reasons, per-language analyses, the daily cap and the saved-analysis seed. They do not measure how well Claude reasons about a case; that needs a live run, which `scripts/generate_seed.py` performs on all six cases.
+
+## Built with AI tools
+
+I used an AI coding assistant to build this and checked, ran and tested the result myself. I can explain any decision in the code or this document.
 
 ## Known limits
 
